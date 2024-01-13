@@ -1,0 +1,103 @@
+/* This is the style sheet for my main page for WDD-230 */
+
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Julius+Sans+One&family=Montserrat:ital,wght@0,100;0,200;0,300;1,100&family=Raleway:ital,wght@0,100;0,200;1,100&display=swap');
+
+body {
+    font-family: 'Montserrat', 'Bradley Hand', sans-serif;
+    background-color: #FCEDDA;
+    color: #201E20;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto auto 1fr auto;
+}
+
+header {
+    background-color: #EE4E34;
+    padding: 15px;
+    align-items: center;
+    grid-column: 1 / 4;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    margin: 0;
+    padding-left: 20px;
+}
+
+img.picture {
+    width: 200px;
+    padding-right: 20px;
+    border: 2px solid #201E20; /* Add a border around the image */
+    padding: 5px; /* Add some padding inside the border */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+h1, img.picture {
+    margin: 0;
+    align-self: center; /* Center both img.picture and h1 vertically */
+}
+
+nav {
+    background-color: #201E20;
+    text-align: center;
+    grid-row: 2 / 3;
+    grid-column: 1 / 4;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #FCEDDA;
+    text-decoration: underline;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+}
+
+h2 {
+    text-align: center;
+    border-bottom: 1px solid #363636; /* Adjust color and thickness as needed */
+    padding-bottom: 8px;
+}
+
+h3 {
+    background-color: #EE4E34;
+    padding: 15px;
+    margin: 0;
+    text-align: center;
+}
+
+.card {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.bullet {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 8px;
+}
+
+img.flag {
+    width: 50px;
+}
+
+footer {
+    grid-column: 1 / 4;
+    grid-row: 4 / 5;
+    text-align: center;
+}
