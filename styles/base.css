@@ -46,6 +46,13 @@ nav {
     grid-column: 1 / 4;
 }
 
+nav ul.bullet {
+    display: flex; /* lay horizontally */
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
 nav a {
     color: white;
     text-decoration: none;
@@ -65,8 +72,9 @@ main {
 
 h2 {
     text-align: center;
-    border-bottom: 1px solid #363636; /* Adjust color and thickness */
+    border-bottom: 1px solid #363636;
     padding-bottom: 8px;
+    width: 100%;
 }
 
 h3 {
@@ -99,4 +107,26 @@ footer {
     grid-column: 1 / 4;
     grid-row: 4 / 5;
     text-align: center;
+}
+
+/* Media Query for larger screens */
+@media screen and (min-width: 600px) {
+    main {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: space-between; 
+    }
+
+    .card {
+        width: 48%; 
+        margin-bottom: 10px; 
+    }
+
+    nav ul.bullet {
+        flex-direction: row; 
+        justify-content: space-evenly; 
+    }
+    nav ul li {
+        flex: 1 1 100%;
+    }
 }

@@ -1,0 +1,8 @@
+body, h1, h2, h3, p, ul, li, figure, figcaption, div {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', 'Bradley Hand', sans-serif;
+}
