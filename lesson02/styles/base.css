@@ -1,7 +1,6 @@
 body {
     font-family: 'Poppins', san-serif;
     background-color: #E7DECD;
-    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -64,7 +63,7 @@ footer {
 }
 
 /* Tablet view */
-@media only screen and (min-width: 37.5em) {
+@media only screen and (min-width: 800px) {
     
     main {
         display: grid;
@@ -74,7 +73,7 @@ footer {
 }
 
 /* Desktop view */
-@media only screen and (min-width: 60em) {
+@media only screen and (min-width: 1000px) {
 
     main {
         display: grid;
