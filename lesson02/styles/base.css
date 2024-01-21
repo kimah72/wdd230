@@ -39,6 +39,8 @@ section {
     background-color: #698F3F;
     padding: 10px;
     text-align: center;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
 }
 
 .card p {
