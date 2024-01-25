@@ -29,9 +29,9 @@ h1 {
 img.picture {
     width: 200px;
     padding-right: 20px;
-    border: 2px solid #201E20; /* Add a border around the image */
-    padding: 5px; /* Add some padding inside the border */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    border: 2px solid #201E20;
+    padding: 5px;
+    box-sizing: border-box;
 }
 
 h1, img.picture {
@@ -46,21 +46,61 @@ nav {
     grid-column: 1 / 4;
 }
 
-nav ul.bullet {
-    display: flex; /* lay horizontally */
+/* nav ul.bullet {
+    display: flex; lay horizontally
     flex-direction: column;
     padding: 0;
     margin: 0;
-}
+} */
 
-nav a {
-    color: white;
+#menu {
+	font-size: 1.5rem;
     text-decoration: none;
+	border: 0;
+	background: none;
+	color: #000;
+	position: fixed;
+	top: 1rem;
+	right: 1rem;
 }
 
-nav a:hover {
-    color: #FCEDDA;
+#menu::before {
+	content: "≡";
+}
+
+#menu.show::before {
+	content: "❎";
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.show a {
+	display: block;
+}
+
+.active::before {
+	content: "📌 "; 
+}
+
+.bullet {
+    display: flex;
+	flex-direction: column;
+	list-style: none;
+	background-color: #333;
+	color: #fff;
+}
+
+.bullet a {
+	display: none;
+	padding: 0.75rem;
+	text-align: center;
+	text-decoration: none;   
+    color: white;
+}
+
+.bullet a:hover, .bullet a:active {
+	color: #FCEDDA;
     text-decoration: underline;
+	font-weight: 700;
 }
 
 main {
@@ -87,12 +127,6 @@ h3 {
 .card {
     border: 1px solid #ccc;
     margin-bottom: 20px;
-}
-
-.bullet {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
 }
 
 li {
@@ -126,7 +160,23 @@ footer {
         flex-direction: row; 
         justify-content: space-evenly; 
     }
+    
     nav ul li {
         flex: 1 1 100%;
     }
+
+    .bullet {
+		flex-direction: row;
+	}
+	.bullet li {
+		display: block; /* change state in small view */
+		flex: 1 1 100%;
+	}
+	.bullet a {
+		display: block;
+		flex: 1 1 100%;
+	}
+	#menu {
+		display: none;
+	}
 }

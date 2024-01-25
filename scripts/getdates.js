@@ -4,3 +4,13 @@ document.getElementById('currentyear').textContent = new Date().toLocaleDateStri
 
 // New script for date last modified
 document.getElementById('lastModified').textContent = "Last Modification: " + document.lastModified;
+
+// Hamburger menu
+
+const hamButton = document.querySelector('#menu');
+const mainnav = document.querySelector('.bullet')
+
+hamButton.addEventListener('click', () => {
+	mainnav.classList.toggle('show');
+	hamButton.classList.toggle('show');
+});
