@@ -77,7 +77,7 @@ main {
 }
 
 .active::before {
-	content: "📌"; /*works - this adds the pin the the link that is active.*/
+	content: "📌"; /*works - this adds the pin to the link that is active.*/
 }
 
 .bullet a {
@@ -170,7 +170,7 @@ footer {
     #menu {
         display: none;  /* first of hamburger code - turn off */
     }
-    
+
     .card {
         width: 48%; 
         margin-bottom: 10px; 
