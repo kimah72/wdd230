@@ -59,7 +59,7 @@ h1, img.picture {
     content: "☰";
 }
 
-#menu.open::before {
+#menu.show::before {
     content: "X";
 }
 
