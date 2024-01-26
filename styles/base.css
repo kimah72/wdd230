@@ -44,15 +44,12 @@ h1, img.picture {
 #menu {
     display: block;
     font-size: 1.5rem;
-    border: 0;
     padding: 0.25rem 0.75rem;
-    background-color: black;
+    background-color: #201E20;
     color: white;
-    position: fixed;
+    position: absolute;
     top: 1rem;
     right: 1rem;
-    /* text-decoration: none; */
-    /* background: none; */
 }
 
 #menu::before {
@@ -64,14 +61,7 @@ h1, img.picture {
 }
 
 .show a {
-    display: block;
-}
-
-main {
-    display: block;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
-    padding: 20px;
+    display: block; /*this expands the menu but I need to figure out how to close it. */
 }
 
 .active::before {
@@ -90,7 +80,7 @@ main {
 .bullet a:hover {
     color: #FCEDDA;
     text-decoration: underline;
-    font-weight: 800;
+    font-weight: 700;
 
 }
 
@@ -99,7 +89,6 @@ main {
     text-align: center;
     grid-column: 1 / 4;
     grid-row: 2 / 3;
-    overflow: auto;
 }
 
 .map {
@@ -109,14 +98,9 @@ main {
 
 /*This is all new css code that I am writing out to get the hamburger menu to work*/
 
-ul {
-    display: flex; /* this lays the menu horizontal */
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
-}
-
 main {
+    display: block;
+    grid-gap: 10px;
     max-width: 800px;
     margin: 0 auto;
     grid-column: 1 / 4;
@@ -163,21 +147,23 @@ footer {
         flex-wrap: wrap; 
         justify-content: space-between; 
     }
-
+ 
     #menu {
         display: none;  /* first of hamburger code - turn off */
+    }
+
+    .bullet ul {
+        display: flex; /* this lays the menu horizontal */
+        padding: 10px;
+        margin: 0;
+    }
+
+    .bullet li {
+        flex: 1 1 100%;
     }
 
     .card {
         width: 48%; 
         margin-bottom: 10px; 
-    }
-
-    .bullet ul {
-        flex-direction: row; 
-        justify-content: space-evenly; /*this lays everything horizontal on a big screen*/
-    }
-    .bullet ul li {
-        flex: 1 1 100%;
     }
 }
