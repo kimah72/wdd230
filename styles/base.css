@@ -41,8 +41,6 @@ h1, img.picture {
 
 /*This is all new css code that I am writing out to get the hamburger menu to work*/
 
-
-
 #menu {
     display: block;
     font-size: 1.5rem;
@@ -101,7 +99,6 @@ main {
     text-align: center;
     grid-column: 1 / 4;
     grid-row: 2 / 3;
-    width: 100%;
     overflow: auto;
 }
 
