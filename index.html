@@ -10,7 +10,7 @@
     <meta property="og:image" content="images/sfpic.webp"> <!-- this is the image meta for week 02-->
     <meta property="og:url" content="https://kimah72.github.io/wdd230/"> <!--static url meta info week-->
     <title>[Kimberly Miner] - WDD 230 - Web Frontend Development</title>
-    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheer" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="icon" href="images/favicon.ico">
 </head>
@@ -21,7 +21,7 @@
         <h1>Kimberly Anne Miner</h1>
     </header>
     <button id="menu"></button>
-    <nav class="navigation">
+    <nav class="bullet"><!--Slowly implementing id's and classes-->
         <ul>
             <li><a href="#" title="Home" class="active">Home</a></li>
             <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
@@ -67,9 +67,12 @@
             <h3>Information</h3>
             <!-- Information placeholders about the weather, number of visits to the page, etc. -->
         </section>
-        <section class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97644.32651333055!2d-111.71673064283247!3d40.11141830352207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874db9d7dc27d89d%3A0x8b6bd315d9f959d0!2sSpanish%20Fork%2C%20UT%2084660!5e0!3m2!1sen!2sus!4v1706156098630!5m2!1sen!2sus" width="800" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
+        
+        <!-- This is the working map on my home page -->
+        <iframe class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97644.32651333055!2d-111.71673064283247!3d40.11141830352207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874db9d7dc27d89d%3A0x8b6bd315d9f959d0!2sSpanish%20Fork%2C%20UT%2084660!5e0!3m2!1sen!2sus!4v1706156098630!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+
     </main>
     <footer>
         <p>&copy; <span id="currentyear"></span> | Kimberly Miner | Utah</p><img class="flag" alt="Utah state flag" src="images/OIP.jpg">
