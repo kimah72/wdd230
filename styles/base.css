@@ -60,7 +60,7 @@ h1, img.picture {
     content: "X";
 }
 
-.show a {
+.show .bullet a {
     display: block; /*this expands the menu but I need to figure out how to close it. */
 }
 
@@ -71,17 +71,17 @@ h1, img.picture {
 .bullet a {
     color: white;
     text-decoration: none;
-    padding: 10px;
+    padding: 5px;
     text-decoration: none;
     font-size: 1.25em;
-    text-align: center; 
+    text-align: center;
+    display: none;
 }
 
 .bullet a:hover {
     color: #FCEDDA;
     text-decoration: underline;
     font-weight: 700;
-
 }
 
 .bullet {
@@ -160,6 +160,10 @@ footer {
 
     .bullet li {
         flex: 1 1 100%;
+    }
+
+    .bullet a {
+        display: block;
     }
 
     .card {
