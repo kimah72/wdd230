@@ -86,6 +86,7 @@ h1, img.picture {
 
 .bullet {
     background-color: #201E20;
+    line-height: 3em;
     text-align: center;
     grid-column: 1 / 4;
     grid-row: 2 / 3;
