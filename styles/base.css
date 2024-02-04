@@ -65,17 +65,17 @@ h1, img.picture {
     list-style: none;
     background-color: #201E20;
     color: #FCEDDA;
-    line-height: .25em;
+    line-height: .5em;
     grid-column: 1 / 4;
     grid-row: 2 / 3;
 }
 
 .bullet a {
     display: none;
-    padding: 1rem;
+    padding: .5rem; /* space between links */
     text-align: center;
     text-decoration: none;
-    color: #FCEDDA;
+    color: white;
     
 }
 /* how the links act when you hover. The area, not just the link is active */
@@ -111,7 +111,8 @@ main {
 h2 {
     text-align: center;
     border-bottom: 1px solid #363636;
-    padding-bottom: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     width: 100%;
 }
 
