@@ -1,0 +1,28 @@
+/* larger.css */
+
+/* Default styles for larger screens */
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Hamburger menu styles for smaller screens */
+nav ul {
+    list-style: none;
+    display: none; /* Initially hide the menu items */
+}
+
+.hamburger button {
+    display: none; /* Initially hide the hamburger button */
+}
+
+/* Adjust styles in larger view */
+@media screen and (min-width: 600px) {
+    nav ul {
+        display: flex; /* Display menu items horizontally */
+    }
+
+    .hamburger button {
+        display: none; /* Hide the hamburger button in larger view */
+    }
+}

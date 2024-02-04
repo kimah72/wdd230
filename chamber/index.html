@@ -24,19 +24,39 @@
         <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Questrial&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <h1>Chamber of Commerce</h1>
+        <header class="hero">
+            <div class="hero-content">
+                <h1>Chamber of Commerce</h1>
+                <button>Sponsors Apply Here:</button>
+            </div>
             <img src="images/hero.jpg" alt="Sunset in Spanish Fork - oil on panel - by Susan N Jarvis">
-            <button>Sponsors Apply Here</button>
+
         </header>
-        <nav>
-            sidebar stuff
+        <nav class="sidebar">
+            <h2>Sidebar Navigation</h2>
+            <!-- The sidebar - working on this-->
+                <div class="sidebar">
+                <a class="active" href="chamber/">Home</a>
+                <a href="#news">Current Events</a>
+                <a href="#contact">Weather</a>
+                <a href="#about">Spotlight</a>
+                </div>
         </nav>
         <main>
-            main content
+            <div class="main">
+                <h3>Current Events</h3>
+            </div>
+            <div class="main">
+                <h3>Weather Card Section</h3>
+            </div>
+            <div class="main">
+                <h3>Spotlight</h3>
+            </div>
         </main>
         <footer>
-            footer
+            <p>&copy; <span id="currentyear"></span> | Kimberly Miner | WDD 230</p><img class="flag" alt="Utah state flag" src="/images/OIP.jpg">
+            <p id="lastModified"></p>
         </footer>
+        <script src="scripts/getdates.js"></script>
     </body>
 </html>

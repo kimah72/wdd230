@@ -76,7 +76,7 @@ h1, img.picture {
     font-weight: 700;
 }
 
-.show .bullet a {
+.show .bullet a ul {
     display: block; /*this expands the menu but I need to figure out how to close it. */
 }
 
@@ -126,7 +126,11 @@ h3 {
     border: 1px solid #ccc;
     margin-bottom: 20px;
 }
-
+/* Hamburger menu styles for smaller screens */
+nav ul {
+    list-style: none;
+    display: none; /* Initially hide the menu items */
+}
 li {
     padding: 8px;
 }
