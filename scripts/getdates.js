@@ -8,9 +8,9 @@ document.getElementById('lastModified').textContent = "Last Modification: " + do
 // Hamburger menu
 
 const hamButton = document.querySelector('#menu');
-const mainnav = document.querySelector('.bullet')
+const navigation = document.querySelector('.bullet')
 
 hamButton.addEventListener('click', () => {
-	mainnav.classList.toggle('show');
-	hamButton.classList.toggle('show');
+	navigation.classList.toggle('open');
+	hamButton.classList.toggle('open');
 });

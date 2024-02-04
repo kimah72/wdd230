@@ -42,12 +42,11 @@ h1, img.picture {
 /*This is all new css code that I am writing out to get the hamburger menu to work*/
 
 #menu {
-    display: block;
     font-size: 1.5rem;
-    padding: 0.25rem 0.75rem;
+    border: 0;
     background-color: #201E20;
-    color: white;
-    position: absolute;
+    color: #FCEDDA; /*color of bars and X*/
+    position: fixed;
     top: 1rem;
     right: 1rem;
 }
@@ -56,40 +55,41 @@ h1, img.picture {
     content: "☰";
 }
 
-#menu.show::before {
+#menu.open::before {
     content: "X";
 }
 
-.bullet a {
-    color: white;
-    text-decoration: none;
-    padding: 5px;
-    text-decoration: none;
-    font-size: 1.25em;
-    text-align: center;
-    display: none;
+.bullet {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: #201E20;
+    color: #FCEDDA;
+    line-height: .25em;
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
 }
 
+.bullet a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #FCEDDA;
+    
+}
+/* how the links act when you hover. The area, not just the link is active */
 .bullet a:hover {
     color: #FCEDDA;
-    text-decoration: underline;
     font-weight: 700;
 }
 
-.show .bullet a ul {
+.open a {
     display: block; /*this expands the menu but I need to figure out how to close it. */
 }
 
 .active::before {
 	content: "📌"; /*works - this adds the pin to the link that is active.*/
-}
-
-.bullet {
-    background-color: #201E20;
-    line-height: 3em;
-    text-align: center;
-    grid-column: 1 / 4;
-    grid-row: 2 / 3;
 }
 
 .map {
@@ -126,11 +126,7 @@ h3 {
     border: 1px solid #ccc;
     margin-bottom: 20px;
 }
-/* Hamburger menu styles for smaller screens */
-nav ul {
-    list-style: none;
-    display: none; /* Initially hide the menu items */
-}
+
 li {
     padding: 8px;
 }
@@ -146,15 +142,11 @@ footer {
 }
 
 /* Media Query for larger screens */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 40em) {
     main {
         display: flex;
         flex-wrap: wrap; 
         justify-content: space-between; 
-    }
- 
-    #menu {
-        display: none;  /* first of hamburger code - turn off */
     }
 
     .bullet ul {
@@ -164,15 +156,21 @@ footer {
     }
 
     .bullet li {
+        display: block; /* change state in small view*/
         flex: 1 1 100%;
     }
 
     .bullet a {
         display: block;
+        flex: 1 1 100%;
     }
 
     .card {
         width: 48%; 
         margin-bottom: 10px; 
+    }
+
+    #menu {
+        display: none;  /* first of hamburger code - turn off */
     }
 }
