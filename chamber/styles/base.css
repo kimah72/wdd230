@@ -12,8 +12,15 @@
     /* Fonts */
     --heading-font: 'Cinzel', serif;
     --paragraph-font: 'Questrial', sans-serif;
-}
 
+
+    /* paragraph text on a colored background */
+    --paragraph-background-color: #214e34;
+    --nav-link-color: #011638;
+    --nav-background-color: #dff8eb;
+    --nav-hover-link-color: #3f4b64;
+    --nav-hover-background-color: #cdcdcd;
+}
 /* base.css */
 
 main {
@@ -23,7 +30,7 @@ main {
     margin: 0 auto;
     padding: 2em;
     grid-column: 1 / 4;
-    grid-row: 2 / 4;
+    grid-row: 3 / 5;
 }
 
 .events {
@@ -61,6 +68,7 @@ header {
     padding: 15px;
     align-items: center;
     grid-column: 1 / 4;
+    grid-row: 2 / 3;
     display: flex;
     justify-content: center;
 }
@@ -70,18 +78,13 @@ h1 h2 h3 {
     color: var(--green);
 }
 
-nav {
-    background-color: var(--grey);
-    padding: 10px;
-}
 /* Adding responsive menu */
-
 /* small view navigation */
 #menu {
 	font-size: 1.5rem;
 	border: 0;
 	background: none;
-	color: #000;
+	color: --nav-hover-link-color;
 	position: absolute;
 	top: 1rem;
 	right: 1rem;
@@ -95,7 +98,45 @@ nav {
 	content: "X";
 }
 
-/* Navigation bar */
+nav {
+    max-width: 100%;
+	margin: 1rem auto;
+}
+
+/* top navigation from w3 schools*/
+
+.topnav {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    background-color: var(--mint);
+    color: #fff;
+    justify-content: space-between;
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--nav-link-color);
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: var(--grey);
+    color: var(--green);
+    font-weight: 700;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
 
 /* when the button is clicked - the open class is toggled (added/removed) */
 .open a {
@@ -106,8 +147,8 @@ nav {
 	content: "📍";  /* just a wayfinding symbol for the user */
 }
 
-
 /* Add for the hero banner */
+
 header.hero {
     position: relative;
     height: 400px;
@@ -119,7 +160,8 @@ header.hero {
     height: auto;
     object-fit: cover; /* image covers the entire container */
     border: 2px solid #214e34;
-    padding: 5px;
+
+    margin-top: 5rem;
 }
 
 .hero-content {
@@ -155,66 +197,18 @@ img.flag {
     width: 50px;
 }
 
-/* sidebar navigation from w3 schools*/
-
-.sidebar {
-    margin: 0;
-    padding: 0;
-    width: 200px;
-    background-color: #f1f1f1;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
-  }
-  
-  .sidebar a {
-    display: block;
-    color: black;
-    padding: 16px;
-    text-decoration: none;
-  }
-   
-  .sidebar a.active {
-    background-color: #04AA6D;
-    color: white;
-  }
-  
-  .sidebar a:hover:not(.active) {
-    background-color: #555;
-    color: white;
-  }
-
-  div.content {
-    margin-left: 200px;
-    padding: 1px 16px;
-    height: 1000px;
-  }
-
   footer {
     grid-column: 1 / 4;
-    grid-row: 4 / 5;
+    grid-row: 5 / 6;
     text-align: center;
 }
 
-  @media screen and (max-width: 700px) {
-    .sidebar {
-      width: 100%;
-      height: auto;
-      position: relative;
-    }
-    .sidebar a {float: left;}
-    div.content {margin-left: 0;}
-  }
-  
-  @media screen and (max-width: 400px) {
-    .sidebar a {
-      text-align: center;
-      float: none;
-    }
-  }
-
 @media screen and (max-width: 600px) {
     .hero-content button {
-        display: inline-block;
+        display: block;
     }
+    #menu {
+        display: block; /* Show the menu on smaller screens */
+    }
+
 }

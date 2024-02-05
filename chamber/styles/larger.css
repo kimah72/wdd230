@@ -1,28 +1,18 @@
 /* larger.css */
 
 /* Default styles for larger screens */
-nav {
-    display: flex;
-    justify-content: space-between;
-}
 
-/* Hamburger menu styles for smaller screens */
-nav ul {
-    list-style: none;
-    display: none; /* Initially hide the menu items */
-}
-
-.hamburger button {
-    display: none; /* Initially hide the hamburger button */
-}
-
-/* Adjust styles in larger view */
-@media screen and (min-width: 600px) {
-    nav ul {
-        display: flex; /* Display menu items horizontally */
+@media (min-width: 40em) {
+    #menu {
+        display: none; /* hide hamburger button */
     }
 
-    .hamburger button {
-        display: none; /* Hide the hamburger button in larger view */
+    .topnav {
+        flex-direction: row;
+    }
+
+    .topnav a {
+        display: block;
+        flex: 1 1 100%; /* this makes the nav links bigger */
     }
 }
