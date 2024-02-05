@@ -98,17 +98,14 @@ h1 h2 h3 {
 	content: "X";
 }
 
-nav {
-    max-width: 100%;
-	margin: 1rem auto;
-}
-
 /* top navigation from w3 schools*/
 
 .topnav {
     display: flex;
     flex-direction: row;
     list-style: none;
+    max-width: 100%;
+	margin: 1rem auto;
     background-color: var(--mint);
     color: #fff;
     justify-content: space-between;
