@@ -189,6 +189,7 @@ img.flag {
 }
 
 footer {
+    display: inline-block;
     grid-column: 1 / 4;
     grid-row: 5 / 6;
     text-align: center;
