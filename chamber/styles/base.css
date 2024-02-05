@@ -181,7 +181,7 @@ header.hero {
 }
 
 .hero-content button:hover {
-    background-color: darken(#214e34, 10%); /* hover effect */
+    background-color: rgba(33, 78, 52, 0.9); /* 10% darker than #214e34 - hover effect */
 }
 
 img.flag {
