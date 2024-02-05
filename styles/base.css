@@ -123,10 +123,7 @@ h3 {
     text-align: center;
 }
 
-.card {
-    border: 1px solid #ccc;
-    margin-bottom: 20px;
-}
+
 
 li {
     padding: 8px;
@@ -136,11 +133,7 @@ img.flag {
     width: 50px;
 }
 
-footer {
-    grid-column: 1 / 4;
-    grid-row: 4 / 5;
-    text-align: center;
-}
+
 
 /* Media Query for larger screens */
 @media screen and (min-width: 40em) {

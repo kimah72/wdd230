@@ -7,10 +7,10 @@ document.getElementById('lastModified').textContent = "Last Modification: " + do
 
 // Hamburger menu
 
-// const hamButton = document.querySelector('#menu');
-// const mainnav = document.querySelector('.bullet')
+const hamButton = document.querySelector('#menu');
+const navigation = document.querySelector('.sidebar')
 
-// hamButton.addEventListener('click', () => {
-// 	mainnav.classList.toggle('show');
-// 	hamButton.classList.toggle('show');
-// });
+hamButton.addEventListener('click', () => {
+	navigation.classList.toggle('open');
+	hamButton.classList.toggle('open');
+});
