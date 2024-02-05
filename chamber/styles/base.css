@@ -141,7 +141,7 @@ h1 h2 h3 {
 }
 
 .active::before { 
-	content: "📍";  /* just a wayfinding symbol for the user */
+	content: "📌";  /* just a wayfinding symbol for the user */
 }
 
 /* Add for the hero banner */
