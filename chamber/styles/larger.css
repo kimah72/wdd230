@@ -10,6 +10,7 @@
 
     .topnav {
         display: flex;
+        width: 100%;
         justify-content: space-around;
         margin: 0;
     }
@@ -17,5 +18,12 @@
     .topnav a {
         display: block;
         flex: 1 1 100%; /* this makes the nav links bigger */
+    }
+
+    header.hero {
+        position: relative;
+        height: 400px;
+        overflow: hidden;
+        border: 1px solid black;
     }
 }

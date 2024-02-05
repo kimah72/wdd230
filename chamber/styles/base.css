@@ -135,7 +135,7 @@ h1 h2 h3 {
 
 /* when the button is clicked - the open class is toggled (added/removed) */
 .open a {
-	display: block;
+	display: flex;
 }
 
 .active::before { 
@@ -145,14 +145,14 @@ h1 h2 h3 {
 /* Add for the hero banner */
 
 header.hero {
+    width: 100%;
     position: relative;
-    height: 400px;
     overflow: hidden;
 }
 
 .hero img {
     width: 100%;
-    height: auto;
+    border: 1px solid black;
 }
 
 .hero-content {
@@ -161,7 +161,7 @@ header.hero {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: #dff8eb;
+    color: #214e34;
 }
 
 .hero-content h1 {
