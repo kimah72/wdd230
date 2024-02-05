@@ -56,7 +56,7 @@ main {
 }
 
 body {
-    font-family: var(--paragraph-font);
+    font-family: 'Questrial', sans-serif;
     color: var(--blue);
     background-color: var(--mint);
     margin: 0;
@@ -75,7 +75,7 @@ header {
 }
 
 h1 h2 h3 {
-    font-family: var(--heading-font);
+    font-family: 'Cinzel', serif;
     color: var(--green);
 }
 
@@ -85,7 +85,7 @@ h1 h2 h3 {
 	font-size: 1.5rem;
 	border: 0;
 	background: none;
-	color: --nav-hover-link-color;
+	color: #3f4b64;
 	position: fixed;
 	top: 1rem;
 	right: 1rem;
@@ -165,7 +165,7 @@ header.hero {
 }
 
 .hero-content h1 {
-    font-family: var(--heading-font);
+    font-family: 'Cinzel', serif;
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
@@ -181,7 +181,7 @@ header.hero {
 }
 
 .hero-content button:hover {
-    background-color: darken(var(--green), 10%); /* hover effect */
+    background-color: darken(#214e34, 10%); /* hover effect */
 }
 
 img.flag {
