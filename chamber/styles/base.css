@@ -155,10 +155,6 @@ header.hero {
 .hero img {
     width: 100%;
     height: auto;
-    object-fit: cover; /* image covers the entire container */
-    border: 2px solid #214e34;
-
-    margin-top: 5rem;
 }
 
 .hero-content {
