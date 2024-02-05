@@ -65,7 +65,7 @@ header {
     justify-content: center;
 }
 
-h1 {
+h1 h2 h3 {
     font-family: var(--heading-font);
     color: var(--green);
 }
@@ -96,56 +96,6 @@ nav {
 }
 
 /* Navigation bar */
-
-.sidebar {
-	display: flex;
-	flex-direction: column;
-	list-style: none;
-	background-color: #333;
-	color: #fff;
-}
-
-.sidebar a {
-	display: none;
-	padding: 1rem;
-	text-align: center;
-	text-decoration: none;
-	color: #fff;
-}.sidebar {
-	display: flex;
-	flex-direction: column;
-	list-style: none;
-	background-color: #333;
-	color: #fff;
-}
-
-.sidebar a {
-	display: none;
-	padding: 1rem;
-	text-align: center;
-	text-decoration: none;
-	color: #fff;
-}
-.sidebar a:hover {
-	background-color: #bbb;
-	color: #333;
-	font-weight: 700;
-}
-
-/* when the button is clicked - the open class is toggled (added/removed) */
-.open a {
-	display: block;
-}
-
-.active::before { 
-	content: "📍";  /* just a wayfinding symbol for the user */
-}
-
-.sidebar a:hover {
-	background-color: #bbb;
-	color: #333;
-	font-weight: 700;
-}
 
 /* when the button is clicked - the open class is toggled (added/removed) */
 .open a {
