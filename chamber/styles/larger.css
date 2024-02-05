@@ -3,12 +3,15 @@
 /* Default styles for larger screens */
 
 @media (min-width: 40em) {
+
     #menu {
         display: none; /* hide hamburger button */
     }
 
     .topnav {
-        flex-direction: row;
+        display: flex;
+        justify-content: space-around;
+        margin: 0;
     }
 
     .topnav a {

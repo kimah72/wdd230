@@ -27,7 +27,7 @@ main {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-gap: 20px;
-    margin: 0 auto;
+    /* margin: 0 auto; this removes restrictions by commenting out */
     padding: 2em;
     grid-column: 1 / 4;
     grid-row: 3 / 5;
@@ -59,13 +59,14 @@ body {
     font-family: var(--paragraph-font);
     color: var(--blue);
     background-color: var(--mint);
+    margin: 0;
+    padding: 0;
     display: grid;
     grid-template-columns: auto 1fr auto;
     grid-template-rows: auto auto 1fr auto;
 }
 
 header {
-    padding: 15px;
     align-items: center;
     grid-column: 1 / 4;
     grid-row: 2 / 3;
@@ -85,7 +86,7 @@ h1 h2 h3 {
 	border: 0;
 	background: none;
 	color: --nav-hover-link-color;
-	position: absolute;
+	position: fixed;
 	top: 1rem;
 	right: 1rem;
 }
@@ -104,11 +105,8 @@ h1 h2 h3 {
     display: flex;
     flex-direction: row;
     list-style: none;
-    max-width: 100%;
-	margin: 1rem auto;
     background-color: var(--mint);
     color: #fff;
-    justify-content: space-between;
     grid-column: 1 / 4;
     grid-row: 1 / 2;
   }
@@ -190,11 +188,12 @@ img.flag {
     width: 50px;
 }
 
-  footer {
+footer {
     grid-column: 1 / 4;
     grid-row: 5 / 6;
     text-align: center;
 }
+/* Media query for smaller screen */
 
 @media screen and (max-width: 600px) {
     .hero-content button {
