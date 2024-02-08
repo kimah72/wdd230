@@ -17,7 +17,7 @@
 
     .topnav a {
         display: block;
-        flex: 1 1 100%; /* this makes the nav links bigger */
+        flex: 1 1 100%; /* this makes the nav links bigger - the area of the element */
     }
 
     header.hero {

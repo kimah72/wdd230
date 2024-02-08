@@ -170,7 +170,7 @@ header.hero {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: #214e34;
+    color: #12271b;
 }
 
 .hero-content h1 {
@@ -183,6 +183,7 @@ header.hero {
     padding: 10px 20px;
     font-size: 1rem; 
     background-color: var(--green);
+    border-radius: 5em;
     color: white;
     border: none;
     cursor: pointer;

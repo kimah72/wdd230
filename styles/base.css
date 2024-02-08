@@ -85,7 +85,7 @@ h1, img.picture {
 }
 
 .open a {
-    display: block; /*this expands the menu but I need to figure out how to close it. */
+    display: block; /*this expands the menu but I need to figure out how to close it. edit - I did figure it out ;) */
 }
 
 .active::before {
@@ -97,7 +97,7 @@ h1, img.picture {
     gap: 10px;
 }
 
-/*This is all new css code that I am writing out to get the hamburger menu to work*/
+/*This is the end of all new css code that I am writing out to get the hamburger menu to work*/
 
 main {
     display: block;
