@@ -107,6 +107,7 @@ main {
 }
 
 .hero {
+    position: relative;
     width: 100%;
     grid-column: 1 / 4;
 }
@@ -119,7 +120,7 @@ main {
 
 .herolabel {
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 2rem;
     background: radial-gradient(#fff, #804608);
     border-radius: 5em;
