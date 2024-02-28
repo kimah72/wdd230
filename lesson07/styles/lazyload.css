@@ -1,0 +1,59 @@
+body {
+    background-color: rgb(44, 45, 46);
+    color: white;
+}
+
+header {
+    margin: 0 auto;
+    background-color: darkblue;
+    padding: 5px;
+    text-align: center; 
+}
+
+main {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main img {
+    padding: 2em;
+    border: 1px solid;
+    margin: 10px;
+    width: 100%;
+    height: auto;
+    background: black;
+    animation: fade 15s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+img.flag {
+    width: 50px;
+}
+
+footer {
+    text-align: center;
+    background-color: darkblue;
+    padding: 1px;
+}
+
+@media screen and (min-width: 500px) {
+
+    main img {
+        padding: 10px;
+        border: 1px solid;
+        margin: 10px;
+        width: auto;
+        height: 600px;
+    }
+}

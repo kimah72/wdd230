@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Load Demonstations</title>
+    <link rel="stylesheet" href="styles/lazyload.css">
+</head>
+<body>
+
+    <header>
+        <h1>Lazy Load Demonstration</h1>
+        <h3>William Adam Horlacher 2001-2024</h3>
+    </header>
+
+    <main>
+        <img width="400" height="600" loading="lazy" src="images/will-baby.webp" alt="Will as a baby">
+        <img width="450" height="600" loading="lazy" src="images/will-nicole.webp" alt="small William with his sister">
+        <img width="337" height="600" loading="lazy" src="images/will-real.webp" alt="Will at Real Salt Lake">
+        <img width="450" height="600" loading="lazy" src="images/will-grad.webp" alt="Will graduating 2020">
+        <img width="450" height="600" loading="lazy" src="images/will-mom.webp" alt="Will and mom hug">
+        <img width="400" height="600" loading="lazy" src="images/will-tux.webp" alt="William in a tux">
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Kimberly Miner | Utah</p><img class="flag" alt="Utah state flag" src="../images/OIP.jpg">
+        <p id="lastModified"></p>
+    </footer>
+    <script src="../scripts/getdates.js"></script>
+    <script src="scripts/lazyload.js"></script>
+</body>
+</html>
