@@ -36,10 +36,11 @@ body {
 /* this is for darkmode */
 #mode {
     position: absolute;
-    top: 3rem;
-    left: 3rem;
+    top: 1rem;
+    left: 2rem;
     cursor: pointer;
     font-size: 2rem;
+    z-index: 1;
 }
 
 header {
@@ -62,7 +63,7 @@ main {
     margin: 0 auto; /* this confines the content within the grid - if taken out, it stretches the entire space */
     padding: 2em;
     grid-column: 1 / 4;
-    grid-row: 3 / 5;
+    /* grid-row: 3 / 5; */
 }
 
 
@@ -106,6 +107,8 @@ main {
 	position: fixed;
 	top: 1rem;
 	right: 1rem;
+    z-index: 1;
+
 }
 
 #menu::before {
@@ -159,12 +162,26 @@ main {
 	content: "📌";  /* just a wayfinding symbol for the user */
 }
 
+.week06 {
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    grid-column: 1 / 4;
+}
+.week06 img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    object-fit: cover;
+}
 /* Add for the hero banner */
 
-header.hero {
+/* header.hero {
     width: 100%;
     position: relative;
-    overflow: hidden;
+    object-fit: cover;
 }
 
 .hero img {
@@ -199,8 +216,8 @@ header.hero {
 }
 
 .hero-content button:hover {
-    background-color: rgba(33, 78, 52, 0.9); /* 10% darker than #214e34 - hover effect */
-}
+    background-color: rgba(33, 78, 52, 0.9); /* 10% darker than #214e34 - hover effect
+} */
 
 img.flag {
     width: 50px;
