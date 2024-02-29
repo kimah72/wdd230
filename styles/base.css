@@ -215,10 +215,9 @@ footer {
         display: block; /* change state in small view*/
         flex: 1 1 100%;
     }
-
+    
     .bullet a {
         display: block;
-        flex: 1 1 100%;
     }
 
     .card {
