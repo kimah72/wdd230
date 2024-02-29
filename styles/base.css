@@ -16,9 +16,9 @@ body {
 header {
     background-color: #EE4E34;
     padding: 15px;
-    align-items: center;
     grid-column: 1 / 4;
     display: flex;
+    align-items: center;
     justify-content: center;
 }
 
@@ -164,6 +164,16 @@ h3 {
 
 .card li {
     text-align: left;
+}
+
+.label {
+	font-weight: 700;
+}
+
+.visits {
+	color: #201E20;
+	font-weight: bolder;
+	font-size: larger;
 }
 
 li {
