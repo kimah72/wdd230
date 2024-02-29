@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Chamber of Commerce</title>
+        <meta name="author" content="Kimberly Miner">
+        <meta name="description" content="Explore opportunities and foster growth with Spanish Fork Chamber of Commerce, your trusted partner in business development. Join our vibrant community, access valuable resources, and elevate your network. Discover a wealth of support to navigate the business landscape successfully.">
+
+        <meta property="og:title" content="Spanish Fork - Chamber of Commerce">
+        <meta property="og:image" content="https://kimah72.github.io/wdd230/chamber/images/sfpic.jpg">
+        <meta property="og:url" content="https://kimah72.github.io/wdd230/chamber/index.html">
+        <meta property="og:type" content="website">
+
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/larger.css">
+
+        <link rel="icon" href="images/favicon.ico">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Questrial&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="hero">
+            <div class="hero-content">
+                <h1>Chamber of Commerce</h1>
+                <button>Join the Chamber</button>
+            </div>
+            <img src="images/hero.jpg" alt="Sunset in Spanish Fork - oil on panel - by Susan N Jarvis">
+            
+            <!-- This is the new switch for dark mode -->
+            <div id="mode">
+                🌚
+            </div>
+            <button id="menu"></button>
+        </header>
+        
+        <nav class="topnav">
+            <!-- The topbar - working on this -->
+                <div class="topnav">
+                <a href="index.html">Home</a>
+                <a class="active" href="discover.html">Discover</a>
+                <a href="#directory">Directory</a>
+                <a href="#join">Join</a>
+                </div>
+        </nav>
+        <main class="grid-container">
+            <div class="sidebar">
+                <div class="info">
+                    <h3>Welcome!</h3>
+                    <p id="last-visit"></p>
+                </div>
+                <h3>About Spanish Fork</h3>
+                <img loading="lazy" src="images/SF-image.jpg" alt="scenic mountains">
+                <div class="info">
+                    <h3>Population (2022)</h3>
+                    <p>Males: 50.7%</p>
+                    <p>Females: 49.3%</p>
+                    <p>Total: 42,602</p>
+                </div>
+                <div class="info">
+                    <h3>Area</h3>
+                    <p>16.21 square miles</p>
+                </div>
+                <div class="info">
+                    <h3>Population Density (2022)</h3>
+                    <p>2,253.8 people per square mile</p>
+                </div>
+            </div>
+            <div class="content">
+                <img src="images/discover-1.webp" alt="discover 1" loading="lazy" width="500" height="250">
+                <img src="images/discover-2.webp" alt="discover 2" loading="lazy" width="500" height="250">
+                <img src="images/discover-3.webp" alt="discover 3" loading="lazy" width="500" height="250">
+                <img src="images/discover-4.webp" alt="discover 4" loading="lazy" width="500" height="250">
+                <img src="images/discover-5.webp" alt="discover 5" loading="lazy" width="500" height="250">
+                <img src="images/discover-6.webp" alt="discover 6" loading="lazy" width="500" height="250">
+            </div>
+        </main>
+        <footer>
+            <p>&copy; <span id="currentyear"></span> | Kimberly Miner | WDD 230</p><img class="flag" alt="Utah state flag" src="../images/OIP.jpg">
+            <p id="lastModified"></p>
+        </footer>
+        <script src="scripts/getdates.js"></script>
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/darkmode.js"></script>
+        <script src="scripts/latest-visit.js"></script>
+    </body>
+</html>
