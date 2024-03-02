@@ -1,10 +1,10 @@
 :root {
-    --back: #682D63;
-    --forelight: #DEEFB7;
-    --border: #414288;
-    --borderlight: #682D63;
-    --shadow: #5FB49C;
-    --zebra: #98DFAF;
+    --background: rgb(18, 18, 18);
+    --text: hsla(0, 0%, 100%, 1);
+    --border: hsla(0, 0%, 16%, 0.8);
+    --borderline: hsla(0, 0%, 0%, 0.3);
+    --shadow: hsl(0, 4%, 53%);
+    --zebra: hsl(0, 0%, 72%);
 }
 
 table {
@@ -17,25 +17,25 @@ table {
 th,
 td {
     padding: 10px 15px;
-    border: 1px solid var(--borderlight);
+    border: 1px solid var(--borderline);
 }
 
 caption {
     padding: 10px;
     caption-side: bottom;
-    color: var(--back);
+    color: var(--background);
     font-size: .85rem;
 }
 
 .black {
-    background-color: var(--back);
-    color: var(--forelight);
+    background-color: var(--background);
+    color: var(--text);
     border: none;
 }
 
 .dkgray {
     color: white;
-    background-color: rgb(88, 88, 88);
+    background-color: hsl(0, 1%, 33%);
 }
 
 tbody tr:nth-child(2) {
