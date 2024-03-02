@@ -1,0 +1,43 @@
+:root {
+    --back: #682D63;
+    --forelight: #DEEFB7;
+    --border: #414288;
+    --borderlight: #682D63;
+    --shadow: #5FB49C;
+    --zebra: #98DFAF;
+}
+
+table {
+    margin: 15rem auto;
+    border: thin solid var(--border);
+    box-shadow: 0 0 10px var(--shadow);
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px 15px;
+    border: 1px solid var(--borderlight);
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    color: var(--back);
+    font-size: .85rem;
+}
+
+.black {
+    background-color: var(--back);
+    color: var(--forelight);
+    border: none;
+}
+
+.dkgray {
+    color: white;
+    background-color: rgb(88, 88, 88);
+}
+
+tbody tr:nth-child(2) {
+    background-color: var(--zebra);
+}
