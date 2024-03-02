@@ -13,6 +13,8 @@ body {
     grid-template-rows: auto auto 1fr auto;
 }
 
+/* everything is working 2/29/24 */
+
 header {
     background-color: #EE4E34;
     padding: 15px;

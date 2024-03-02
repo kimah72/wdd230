@@ -23,6 +23,8 @@
 }
 /* base.css */
 
+/* everything is working 2/29/24 */
+
 body {
     font-family: 'Questrial', sans-serif;
     color: var(--blue);
@@ -36,11 +38,10 @@ body {
 /* this is for darkmode */
 #mode {
     position: absolute;
-    top: 1rem;
-    left: 2rem;
+    top: 2.5rem;
+    left: 2.5rem;
     cursor: pointer;
     font-size: 2rem;
-    z-index: 1;
 }
 
 header {
@@ -63,10 +64,8 @@ main {
     margin: 0 auto; /* this confines the content within the grid - if taken out, it stretches the entire space */
     padding: 2em;
     grid-column: 1 / 4;
-    /* grid-row: 3 / 5; */
+    grid-row: 3 / 5;
 }
-
-
 
 .events {
     border: 1px solid #000000;
@@ -98,17 +97,16 @@ main {
 }
 
 /* Adding responsive menu */
-/* small view navigation */
+/* small view navigation - remember larger.css file */
+
 #menu {
+    position: absolute;
 	font-size: 1.5rem;
 	border: 0;
 	background: none;
-	color: #3f4b64;
-	position: fixed;
-	top: 1rem;
-	right: 1rem;
-    z-index: 1;
-
+	color: #344467;
+	top: 2.5rem;
+	right: 2.5rem;
 }
 
 #menu::before {
@@ -117,6 +115,78 @@ main {
 
 #menu.open::before {
 	content: "X";
+}
+/* the discover sidebar */
+
+.grid-container {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.sidebar {
+    /* added first three lines to center the sidebar */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #214e34;
+    border: 10px solid #12271b;
+    border-radius: 2em;
+    border-style: ridge;
+    color: var(--mint);
+    width: 75%;
+}
+
+.sidebar img {
+    width: 250px;
+    border: 1px solid #12271b;
+}
+.sidebar h3 {
+    padding: 5px;
+    font-size: 24px;
+    text-align: center;
+    /* border-bottom: 1px solid white; */
+}
+
+.sidebar p {
+    padding: 5px;
+    text-align: center;
+}
+
+.info {
+    /* border: 1px solid white; */
+    margin: 10px;
+    padding: 20px;
+}
+
+.content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content img {
+    margin: 10px;
+    width: 50%;
+    height: auto;
+    border: 1px solid #333;
+    border-radius: 1em;
+}
+
+.content img:hover {
+    width: 65%;
+    transition: transform .5s;
+    opacity: .8;
+    transform: scale(1.02);
+}
+
+.content h3 {
+    padding: 10px;
+    margin-top: 25px;
 }
 
 /* top navigation from w3 schools*/
@@ -127,8 +197,9 @@ main {
     list-style: none;
     background-color: var(--mint);
     color: #fff;
+    justify-content: space-around;
+    width: 100%;
     grid-column: 1 / 4;
-    grid-row: 1 / 2;
   }
   
   /* Style the links inside the navigation bar */
@@ -138,6 +209,8 @@ main {
     text-align: center;
     text-decoration: none;
     color: var(--nav-link-color);
+    flex-grow: 1;
+    justify-content: center;
   }
   
   /* Change the color of links on hover */
@@ -162,31 +235,17 @@ main {
 	content: "📌";  /* just a wayfinding symbol for the user */
 }
 
-.week06 {
-    position: relative;
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    grid-column: 1 / 4;
-}
-.week06 img {
-    width: 100%;
-    height: auto;
-    margin: 0;
-    object-fit: cover;
-}
 /* Add for the hero banner */
 
-/* header.hero {
+header.hero {
     width: 100%;
     position: relative;
-    object-fit: cover;
+    overflow: hidden;
 }
 
 .hero img {
     width: 100%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .hero-content {
@@ -200,12 +259,12 @@ main {
 
 .hero-content h1 {
     font-family: 'Cinzel', serif;
-    font-size: 2.5rem;
-    margin-bottom: 20px;
+    font-size: 2rem;
+    /* margin-bottom: 20px; */
 }
 
 .hero-content button {
-    padding: 10px 20px;
+    padding: 10px;
     font-size: 1rem; 
     background-color: var(--green);
     border-radius: 5em;
@@ -216,8 +275,8 @@ main {
 }
 
 .hero-content button:hover {
-    background-color: rgba(33, 78, 52, 0.9); /* 10% darker than #214e34 - hover effect
-} */
+    background-color: rgba(33, 78, 52, 0.9); /* 10% darker than #214e34 - hover effect */
+}
 
 img.flag {
     width: 50px;
@@ -233,11 +292,10 @@ footer {
 /* Media query for smaller screen */
 
 @media screen and (max-width: 40em) {
-    .hero-content button {
+    /* .hero-content button {
         display: block;
-    }
+    } */
     #menu {
         display: block; /* Show the menu on smaller screens */
     }
-
 }
