@@ -85,7 +85,7 @@ main {
 label{
     /* this gave shape */
     display: block;
-    margin-bottom: 5px;
+    margin-top: 20px;
     font-weight: bold;
 }
 
@@ -108,6 +108,7 @@ select {
 
 textarea {
     resize: vertical;
+    margin-bottom: 10px;
 }
 
 input:required {
@@ -132,10 +133,6 @@ button.join:hover {
     background-color: #0056b3;
 }
 
-#form-message {
-	margin: 10px;
-	color: red;
-}
 .events {
     border: 1px solid #000000;
     margin-bottom: 20px;
