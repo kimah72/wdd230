@@ -110,6 +110,14 @@ textarea {
     resize: vertical;
 }
 
+input:required {
+    border-left: solid 4px red;
+}
+
+input:required:valid {
+    border-left: solid 4px green;
+}
+
 button.join {
     background-color: #007bff;
     color: #fff;
