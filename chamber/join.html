@@ -41,30 +41,47 @@
         <nav class="topnav">
             <!-- The topbar - working on this -->
                 <div class="topnav">
-                <a class="active" href="index.html">Home</a>
+                <a href="index.html">Home</a>
                 <a href="discover.html">Discover</a>
-                <a href="#directory">Directory</a>
-                <a href="join.html">Join</a>
+                <a href="directory">Directory</a>
+                <a class="active" href="join.html">Join</a>
                 </div>
         </nav>
         <main>
-            <div class="events">
-                <h3>Current Events</h3>
-            </div>
-            <div class="weather">
-                <h3>Weather Card Section</h3>
-            </div>
-            <div class="spotlight">
-                <div class="spotlight-item">
-                    <h3>Spotlight 1</h3>
-                </div>
-                <div class="spotlight-item">
-                    <h3>Spotlight 2</h3>
-                </div>
-                <div class="spotlight-item">
-                    <h3>Spotlight 3</h3>
-                </div>
-            </div>
+            <form action="thankyou.html" method="get">
+                <label for="firstName">First Name:
+                <input type="text" id="firstName" name="firstName" required></label>
+    
+                <label for="lastName">Last Name:
+                <input type="text" id="lastName" name="lastName" required></label>
+    
+                <label for="position">Position within Organization:
+                <input type="text" id="position" name="position" required pattern="[A-Za-z -]{7,}"></label>
+    
+                <label for="email">Email:
+                <input type="email" id="email" name="email" required placeholder="example@example.com"></label>
+    
+                <label for="phone">Mobile Phone:
+                <input type="tel" id="phone" name="phone" required></label>
+    
+                <label for="organization">Organization Name:
+                <input type="text" id="organization" name="organization" required></label>
+    
+                <label for="membershipLevel">Membership Level:</label>
+                <select id="membershipLevel" name="membershipLevel" required>
+                    <option value="NP">NP Membership</option>
+                    <option value="Bronze">Bronze Membership</option>
+                    <option value="Silver">Silver Membership</option>
+                    <option value="Gold">Gold Membership</option>
+                </select>
+    
+                <label for="description">Organization Description:</label>
+                <textarea id="description" name="description"></textarea>
+    
+                <input type="hidden" id="formSubmissionTime" name="formSubmissionTime">
+    
+                <button type="submit">Submit</button>
+            </form>
         </main>
         <footer>
             <p>&copy; <span id="currentyear"></span> | Kimberly Miner | WDD 230</p><img class="flag" alt="Utah state flag" src="../images/OIP.jpg">
@@ -73,6 +90,9 @@
         <script src="scripts/getdates.js"></script>
         <script src="scripts/hamburger.js"></script>
         <script src="scripts/darkmode.js"></script>
+        <script src="scripts/join.js"></script>
     </body>
 </html>
-<!-- everything is working 2/29/24 -->
+<!-- everything is working 3/2/24 -->
+<!-- everything is working 3/2/24 -->
+<!-- everything is working 3/2/24 -->

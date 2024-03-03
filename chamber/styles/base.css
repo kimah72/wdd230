@@ -59,7 +59,7 @@ h1 h2 h3 {
 
 main {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: auto auto 1fr;
     grid-gap: 20px;
     margin: 0 auto; /* this confines the content within the grid - if taken out, it stretches the entire space */
     padding: 2em;
@@ -72,7 +72,6 @@ main {
     margin-bottom: 20px;
     padding: 1em;
 }
-
 
 .weather {
     border: 1px solid #000000;
