@@ -48,39 +48,44 @@
                 </div>
         </nav>
         <main>
-            <form action="thankyou.html" method="get">
-                <label for="firstName">First Name:
-                <input type="text" id="firstName" name="firstName" required></label>
-    
-                <label for="lastName">Last Name:
-                <input type="text" id="lastName" name="lastName" required></label>
-    
-                <label for="position">Position within Organization:
-                <input type="text" id="position" name="position" required pattern="[A-Za-z -]{7,}"></label>
-    
-                <label for="email">Email:
-                <input type="email" id="email" name="email" required placeholder="example@example.com"></label>
-    
-                <label for="phone">Mobile Phone:
-                <input type="tel" id="phone" name="phone" required></label>
-    
-                <label for="organization">Organization Name:
-                <input type="text" id="organization" name="organization" required></label>
-    
-                <label for="membershipLevel">Membership Level:</label>
-                <select id="membershipLevel" name="membershipLevel" required>
-                    <option value="NP">NP Membership</option>
-                    <option value="Bronze">Bronze Membership</option>
-                    <option value="Silver">Silver Membership</option>
-                    <option value="Gold">Gold Membership</option>
-                </select>
-    
-                <label for="description">Organization Description:</label>
-                <textarea id="description" name="description"></textarea>
-    
-                <input type="hidden" id="formSubmissionTime" name="formSubmissionTime">
-    
-                <button type="submit">Submit</button>
+            <div id="form-message"></div>
+            <form action="thankyou.html" method="get" id="chamber-form">
+                <fieldset>
+                    <legend>Join the Chamber</legend>
+
+                    <label for="firstName">First Name:
+                    <input type="text" id="firstName" name="firstName" required></label>
+        
+                    <label for="lastName">Last Name:
+                    <input type="text" id="lastName" name="lastName" required></label>
+        
+                    <label for="position">Position within Organization:
+                    <input type="text" id="position" name="position" required pattern="[A-Za-z -]{7,}"></label>
+        
+                    <label for="email">Email:
+                    <input type="email" id="email" name="email" required placeholder="example@example.com"></label>
+        
+                    <label for="phone">Mobile Phone:
+                    <input type="tel" id="phone" name="phone" required></label>
+        
+                    <label for="organization">Organization Name:
+                    <input type="text" id="organization" name="organization" required></label>
+        
+                    <label for="membershipLevel">Membership Level:</label>
+                    <select id="membershipLevel" name="membershipLevel" required>
+                        <option value="NP">NP Membership</option>
+                        <option value="Bronze">Bronze Membership</option>
+                        <option value="Silver">Silver Membership</option>
+                        <option value="Gold">Gold Membership</option>
+                    </select>
+        
+                    <label for="description">Organization Description:</label>
+                    <textarea id="description" name="description"></textarea>
+        
+                    <input type="hidden" id="formSubmissionTime" name="formSubmissionTime">
+        
+                    <button type="submit">Join Today</button>
+                </fieldset>
             </form>
         </main>
         <footer>

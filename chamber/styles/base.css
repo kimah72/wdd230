@@ -71,6 +71,11 @@ main {
     margin: 40px;
     text-align: center;
 }
+
+#chamber-form {
+    display: block;
+    max-width: 50%;
+}
 .events {
     border: 1px solid #000000;
     margin-bottom: 20px;
