@@ -1,0 +1,102 @@
+/*-- This is my form CSS --*/
+:root {
+    --main-bg-color: #FEFCFB;
+    --text-color: #333;
+    --accent-color: #197692;
+}
+
+main {
+    width: 50%;
+    display: block;
+    margin: auto;
+    padding: 20px;
+}
+
+fieldset {
+    border: 2px solid var(--accent-color);
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: var(--main-bg-color);
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+label{
+    display: block;
+    margin-top: 1.5rem;
+}
+
+input {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    padding: .8rem;
+    margin-top: 5px;
+    border: 1px solid var(--text-color);
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+input:required {
+    border-bottom: solid 8px red;
+}
+
+input:required:valid {
+    border-bottom: solid 8px green;
+}
+
+.button {
+    margin-top: 2rem;
+    background-color: var(--accent-color);
+    color: white;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: var(--main-bg-color);
+    color: var(--text-color);
+    border: solid 1px var(--text-color);
+
+}
+
+#form-message {
+	margin: 10px;
+	color: red;
+}
+
+#password:invalid {
+	background-color: #fff0f3;
+	animation: shaketext 500ms;
+}
+
+#rangevalue {
+	font-size: 2rem;
+	color: var(--text-color);
+}
+
+#rangevalues {
+	display: flex;
+	width: 400px;
+    margin-left: 1rem;
+}
+
+#rangevalues option {
+    flex: 1 1 auto;
+}
+
+@keyframes shaketext {
+	25% {
+		transform: translateX(3px);
+	}
+	50% {
+		transform: translateX(-3px);
+	}
+	75% {
+		transform: translateX(3px);
+	}
+}
