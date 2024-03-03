@@ -67,6 +67,10 @@ main {
     grid-row: 3 / 5;
 }
 
+.thanks h1 {
+    margin: 40px;
+    text-align: center;
+}
 .events {
     border: 1px solid #000000;
     margin-bottom: 20px;
