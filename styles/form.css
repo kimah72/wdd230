@@ -6,6 +6,8 @@
 }
 
 main {
+    width: 100%;
+    max-width: 450px;
     display: block;
     margin: auto;
     padding: 20px;
