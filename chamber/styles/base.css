@@ -72,9 +72,61 @@ main {
     text-align: center;
 }
 
-#chamber-form {
+#chamber-form  {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label{
+    /* this gave shape */
     display: block;
-    max-width: 50%;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+select {
+    appearance: none;
+    padding-right: 40px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button.join {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.join:hover {
+    background-color: #0056b3;
+}
+
+#form-message {
+	margin: 10px;
+	color: red;
 }
 .events {
     border: 1px solid #000000;
