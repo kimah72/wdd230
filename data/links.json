@@ -1,0 +1,104 @@
+{
+    "lessons": [
+        {
+            "lesson": "02",
+            "links": [
+            {
+                "url": "lesson02/media-query.html",
+                "title": "Media Queries"
+            },
+            {
+                "url": "lesson02/design.html",
+                "title": "Design Principles"
+            }
+            ]
+        },
+        {
+            "lesson": "03",
+            "links": [
+            {
+                "url": "images/divp.png",
+                "title": "Combinators"
+            },
+            {
+                "url": "https://codepen.io/Kim-Miner/pen/gOEGRjO?editors=1100",
+                "title": "CSS Psuedo Elements"
+            },
+            {
+                "url": "https://codepen.io/Kim-Miner/pen/xxBXLge?editors=0100",
+                "title": "Hamburger Menu"
+            }
+            ]
+        },
+        {
+            "lesson": "04",
+            "links": [
+            {
+                "url": "https://codepen.io/Kim-Miner/pen/rNRJJyq",
+                "title": "Pseudo-class Fun"
+            }
+            ]
+        },
+        {
+            "lesson": "05",
+            "links": [
+            {
+                "url": "lesson05/bom.html",
+                "title": "Book of Mormon Application Build"
+            }
+            ]
+        },
+        {
+            "lesson": "06",
+            "links": [
+            {
+                "url": "images/landscape.webp",
+                "title": "WebP"
+            },
+            {
+                "url": "lesson06/responsive-images.html",
+                "title": "Responsive Images"
+            }
+            ]
+        },
+        {
+            "lesson": "07",
+            "links": [
+            {
+                "url": "lesson07/lazyload.html",
+                "title": "Lazy Load"
+            },
+            {
+                "url": "lesson07/bom.html",
+                "title": "Local Storage - BOM rebuild"
+            }
+            ]
+        },
+        {
+            "lesson": "08",
+            "links": [
+            {
+                "url": "lesson08/tablebuild.html",
+                "title": "Table Build"
+            },
+            {
+                "url": "lesson08/index.html",
+                "title": "Form Build"
+            }
+            ]
+        },
+        {
+            "lesson": "09",
+            "links": [
+            {
+                "url": "lesson09/new-ward-members.json",
+                "title": "Table Build"
+            },
+            {
+                "url": "lesson09/prophets.html",
+                "title": "Prophets"
+            }
+            ]
+        }
+    ]
+}
