@@ -13,7 +13,8 @@ body {
     grid-template-rows: auto auto 1fr auto;
 }
 
-/* everything is working 2/29/24 */
+/* everything is working 3/5/24 */
+/* everything is working 3/5/24 */
 
 header {
     background-color: #EE4E34;
@@ -164,8 +165,9 @@ h3 {
     text-align: center;
 }
 
-.card li {
+.links {
     text-align: left;
+    margin-left: 1rem;
 }
 
 .label {
