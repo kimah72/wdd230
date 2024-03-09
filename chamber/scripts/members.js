@@ -10,7 +10,7 @@ async function getMembers(url) {
 }
 
 const displayMembers = async () => {
-    container.innerHTML = ""; // Clear previous content
+    container.innerHTML = ""; // clear previous content
 
     const members = await getMembers(membersURL);
 
