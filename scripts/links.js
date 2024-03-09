@@ -7,9 +7,9 @@ async function getLinks(url) {
     const data = await response.json();
 
     displayLinks(data.lessons);
-};
+}
 
-const displayLinks = (weeks) => {
+  const displayLinks = (weeks) => {
     weeks.forEach((week) => {
         const h4 = document.createElement("h4");
         h4.textContent = `Week ${week.lesson}: `;
@@ -18,13 +18,12 @@ const displayLinks = (weeks) => {
             const a = document.createElement("a");
 
             a.setAttribute("href", `${lesson.url}`);
-            a.textContent = `${lesson.title}   |   `;
-
+            a.textContent = `${lesson.title}  |  `;
+            
             h4.appendChild(a);
-
-        });
+        })
         ul.appendChild(h4);
-    });
-};
+    })
+}
 
-getLinks(linksURL);
+getLinks(linksURL)
