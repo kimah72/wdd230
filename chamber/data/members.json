@@ -41,7 +41,7 @@
             "address": "222 Aviation Boulevard, Spanish Fork, Utah",
             "phoneNumber": "555-789-1234",
             "websiteURL": "http://www.blueskyairlines.com",
-            "images": "bluesky.jpeg",
+            "images": "bluesky.jpg",
             "membership": "Platinum",
             "info": "BlueSky Airlines provides luxurious air travel with unmatched customer service."
         },
@@ -59,7 +59,7 @@
             "address": "444 Walnut Avenue, Spanish Fork, Utah",
             "phoneNumber": "555-888-7777",
             "websiteURL": "http://www.creativemindsmarketing.com",
-            "images": "creativeminds.jpeg",
+            "images": "creativeminds.jpg",
             "membership": "Gold",
             "info": "Creative Minds Marketing delivers innovative marketing solutions to help businesses thrive."
         }
