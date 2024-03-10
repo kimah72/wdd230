@@ -1,5 +1,4 @@
-const baseURL = "https://kimah72.github.io/wdd230/chamber/";
-const baseIMG = "https://kimah72.github.io/wdd230/chamber/images/"
+const baseURL = "https://kimah72.github.io/wdd230/chamber/images/";
 const membersURL = "https://kimah72.github.io/wdd230/chamber/data/members.json";
 
 const container = document.querySelector(".container");
@@ -20,7 +19,7 @@ const displayMembers = async () => {
         div.classList.add("member-card");
 
         const img = document.createElement("img");
-        img.src = baseIMG + member.images;
+        img.src = baseURL + member.images;
         img.alt = member.name;
 
         const h2 = document.createElement("h2");
