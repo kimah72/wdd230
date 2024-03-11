@@ -5,7 +5,7 @@
             "address": "123 Main Street, Spanish Fork, Utah",
             "phoneNumber": "555-123-4567",
             "websiteURL": "http://www.techsavvysolutions.com",
-            "images": "techsavvy.jpg",
+            "images": "techsavvy.jpeg",
             "membership": "Gold",
             "info": "TechSavvy Solutions offers innovative IT solutions for businesses of all sizes."
         },
@@ -14,7 +14,7 @@
             "address": "456 Elm Avenue, Spanish Fork, Utah",
             "phoneNumber": "555-987-6543",
             "websiteURL": "http://www.greenglobelandscaping.com",
-            "images": "greenglobe.jpeg",
+            "images": "greenglobe.jpg",
             "membership": "Silver",
             "info": "GreenGlobe Landscaping specializes in eco-friendly landscaping services."
         },
@@ -32,7 +32,7 @@
             "address": "101 Pine Lane, Spanish Fork, Utah",
             "phoneNumber": "555-321-6549",
             "websiteURL": "http://www.peakfitnessgym.com",
-            "images": "peakfitness.jpeg",
+            "images": "peakfitness.jpg",
             "membership": "Gold",
             "info": "Peak Fitness Gym offers state-of-the-art equipment and personalized training programs."
         },
@@ -41,7 +41,7 @@
             "address": "222 Aviation Boulevard, Spanish Fork, Utah",
             "phoneNumber": "555-789-1234",
             "websiteURL": "http://www.blueskyairlines.com",
-            "images": "bluesky.jpg",
+            "images": "bluesky.jpeg",
             "membership": "Platinum",
             "info": "BlueSky Airlines provides luxurious air travel with unmatched customer service."
         },
@@ -50,7 +50,7 @@
             "address": "333 Maple Street, Spanish Fork, Utah",
             "phoneNumber": "555-654-9871",
             "websiteURL": "http://www.happypawspetcare.com",
-            "images": "happypaws.jpeg",
+            "images": "happypaws.jpg",
             "membership": "Silver",
             "info": "Happy Paws Pet Care offers premium pet grooming and boarding services."
         },
