@@ -1,7 +1,7 @@
 const baseURL = "https://kimah72.github.io/wdd230/chamber/images/";
 const membersURL = "https://kimah72.github.io/wdd230/chamber/data/members.json";
 
-const container = document.querySelector(".container");
+const directory = document.querySelector(".directory");
 
 async function getMembers(url) {
     const response = await fetch(url);
@@ -10,7 +10,7 @@ async function getMembers(url) {
 }
 
 const displayMembers = async () => {
-    container.innerHTML = ""; // clear previous content
+    directory.innerHTML = ""; // clear previous content
 
     const members = await getMembers(membersURL);
 
@@ -23,16 +23,30 @@ const displayMembers = async () => {
         img.alt = member.name;
 
         const h2 = document.createElement("h2");
-        h2.textContent = member.name;
+        h2.textContent = `${member.name}`;
 
         const p = document.createElement("p");
-        p.textContent = member.info;
+        p.textContent = `${member.address}`;
+
+        const phone = document.createElement("p");
+        phone.textContent = `Phone: ${member.phoneNumber}`;
+
+        const weburl = document.createElement("a");
+        weburl.setAttribute("href", `${member.weburl}`);
+        weburl.setAttribute("target", "_blank");
+        weburl.textContent = `${member.name} Website`;
+
+        const membLvl = document.createElement("p");
+        membLvl.textContent = `Membership Level: ${member.membership}`;
 
         div.appendChild(img);
         div.appendChild(h2);
         div.appendChild(p);
+        div.appendChild(phone)
+        div.appendChild(weburl)
+        div.appendChild(membLvl)
 
-        container.appendChild(div);
+        directory.appendChild(div);
     });
 };
 
