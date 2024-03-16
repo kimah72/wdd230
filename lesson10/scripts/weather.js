@@ -22,7 +22,7 @@ apiFetch();
 
 function displayResults(data) {
     currentTemp.innerHTML = `${Math.round(data.main.temp)}&deg;F`;
-    const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+    const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     let desc = data.weather[0].description;
     desc = desc.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' '); 
     weatherIcon.setAttribute('src', iconsrc);
