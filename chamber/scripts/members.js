@@ -16,27 +16,22 @@ const displayMembers = async () => {
 
     members.forEach(member => {
         const div = document.createElement("div");
-        div.classList.add("member-card");
-
         const img = document.createElement("img");
+        const h2 = document.createElement("h2");
+        const p = document.createElement("p");
+        const phone = document.createElement("p");
+        const weburl = document.createElement("a");
+        const membLvl = document.createElement("p");
+
+        div.classList.add("member-card");
         img.src = baseURL + member.images;
         img.alt = member.name;
-
-        const h2 = document.createElement("h2");
         h2.textContent = `${member.name}`;
-
-        const p = document.createElement("p");
         p.textContent = `${member.address}`;
-
-        const phone = document.createElement("p");
         phone.textContent = `Phone: ${member.phoneNumber}`;
-
-        const weburl = document.createElement("a");
         weburl.setAttribute("href", `${member.weburl}`);
         weburl.setAttribute("target", "_blank");
         weburl.textContent = `${member.name} Website`;
-
-        const membLvl = document.createElement("p");
         membLvl.textContent = `Membership Level: ${member.membership}`;
 
         div.appendChild(img);
@@ -49,6 +44,24 @@ const displayMembers = async () => {
         directory.appendChild(div);
     });
 };
-
 // Initial display
 displayMembers();
+
+// The start of grid button and list button
+
+const gridbutton = document.querySelector('#grid');
+const listbutton = document.querySelector('#list');
+const display = document.querySelector('.directory');
+
+// arrow functions for click event to change between the two
+gridbutton.addEventListener('click', () => {
+    display.classList.add('grid');
+    display.classList.remove('list');
+});
+
+listbutton.addEventListener('click', showList);
+
+function showList() {
+    display.classList.add('list');
+    display.classList.remove('grid');
+}

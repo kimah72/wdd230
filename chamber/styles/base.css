@@ -59,25 +59,85 @@ h1 h2 h3 {
 
 main {
     display: grid;
-    grid-template-columns: auto auto 1fr;
-    grid-gap: 20px;
+    grid-template-columns: auto 1fr;
     margin: 0 auto; /* this confines the content within the grid - if taken out, it stretches the entire space */
     padding: 2em;
     grid-row: 3 / 5;
 }
 /* this is the css for the members directory */
-main h1 {
-    text-align: center;
+
+main.main {
+    display: block;
+    
 }
 
-main.grid-list {
-    grid-row: 4/5;
+main h1 {
+    font-size: 36px;
+    font-weight: bolder;
+    text-align: center;
+    margin: 1rem;
 }
+
+.menu {
+    margin: 1rem auto;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: #bed;
+	text-align: center;
+}
+
+.menu button {
+    padding: 1rem;
+    font-weight: 700;
+    margin: 0 0.5rem;
+}
+  /* List Layout */
+  .list .member-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+.list div:nth-child(even) {
+	background-color: #bed;
+}
+  
+  .list .member-card img {
+    display: none; /* Hide images in list layout */
+  }
+  
+  .list .member-card h2 {
+    margin-top: 0;
+  }
+  
+  .list .member-card p {
+    margin: 5px 0;
+  }
+  
+  .list .member-card a {
+    text-decoration: none;
+    color: blue;
+  }
+  
+  .list .member-card a:hover {
+    text-decoration: underline;
+  }
 
 .directory {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));/* this is the magic layout */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));/* this is the magic layout */
     gap: 20px;
+}
+
+.directory div {
+    padding: 1rem;
+    text-align: center;
+}
+
+.directory img {
+    width: 100%;
 }
 
 .member-card {
@@ -86,19 +146,16 @@ main.grid-list {
     padding: 20px;
 }
 
-.member-card img {
-    width: 100%;
-}
-
 .member-card h2 {
     font-size: 18px;
     margin-bottom: 10px;
 }
 
 .member-card p {
-    font-size: 14px;
+    font-size: 16px;
     color: #666;
 }
+
 /* end of directory */
 
 .thanks h1 {
