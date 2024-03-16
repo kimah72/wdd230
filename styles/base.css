@@ -102,6 +102,19 @@ h1, img.picture {
 
 /*This is the end of all new css code that I am writing out to get the hamburger menu to work*/
 
+/* Weather API week 10 */
+
+.weather {
+    font-size: larger;
+    color: #201E20;
+    padding: 10px;
+  }
+  #weather-icon {
+    vertical-align: middle;
+    background-color: #8fb1f4;
+    margin: 1rem;
+  }
+
 main {
     display: block;
     margin: 0 auto;
