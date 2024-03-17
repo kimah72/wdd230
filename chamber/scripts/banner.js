@@ -3,7 +3,7 @@ const closeBannerButton = document.querySelector('#closeBanner');
 const currentDate = new Date();
 const currentDay = currentDate.getDay();
 
-if (currentDay >= 4 && currentDay <= 6) {
+if (currentDay >= 1 && currentDay <= 3) {
     banner.style.display = 'block';
 }
 
