@@ -50,12 +50,9 @@ function displayforecast(data) {
 
 function getDate(txt) {
     const date = new Date(txt);
-
     const day = date.getDate();
     const month = date.getMonth() + 1;
 
     return `${month}/${day}`;
-
 }
-
 getforecast(forecasturl);

@@ -30,7 +30,7 @@ function displayWeather(data) {
 
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`
 
-    tempDesc.innerHTML = `${temp}&deg;F - ${capitalizedDesc}`;
+    tempDesc.innerHTML = `${temp}&deg;F | ${capitalizedDesc}`;
     weatherIcon.setAttribute("src", iconsrc);
     weatherIcon.setAttribute("alt", "weather icon");
 
