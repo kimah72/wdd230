@@ -25,14 +25,12 @@ async function getWeather(url) {
 function displayWeather(data) {
     const temperature = data.main.temp;
     const temp = temperature.toFixed(0);
-
     const desc = data.weather[0].description;
     const capitalizedDesc = capitalizeWords(desc);
 
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`
 
-    tempDesc.textContent = `${temp}°F - ${capitalizedDesc}`;
-
+    tempDesc.innerHTML = `${temp}&deg;F - ${capitalizedDesc}`;
     weatherIcon.setAttribute("src", iconsrc);
     weatherIcon.setAttribute("alt", "weather icon");
 

@@ -39,9 +39,9 @@ function displayforecast(data) {
     const tempThirdDay = temp3.toFixed(0);
     const dateThirdDay = getDate(thirdDay.dt_txt);
 
-    day1.textContent = `${dateFirstDay} - ${tempFirstDay}°F`;
-    day2.textContent = `${dateSecondDay} - ${tempSecondDay}°F`;
-    day3.textContent = `${dateThirdDay} - ${tempThirdDay}°F`;
+    day1.innerHTML = `${dateFirstDay} - ${tempFirstDay}&deg;F`;
+    day2.innerHTML = `${dateSecondDay} - ${tempSecondDay}&deg;F`;
+    day3.innerHTML = `${dateThirdDay} - ${tempThirdDay}&deg;F`;
 
     div.appendChild(day1);
     div.appendChild(day2);
