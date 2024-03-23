@@ -63,7 +63,6 @@ main {
     margin: 0 auto; /* this confines the content within the grid - if taken out, it stretches the entire space */
     padding: 2em;
     grid-row: 3 / 5;
-    grid-column: 1/5;
 }
 
 /* this is css for the chamber div sections */
@@ -87,10 +86,9 @@ main {
     justify-content: center;
 }
 /* Mon, Wed, Fri Banner */
-
 .banner {
     display: none;
-    grid-column: 1/3;
+    grid-column: 1 / 3;
     font-size: 2rem;
     margin: 1rem;
     background-color: #344467;
@@ -98,7 +96,10 @@ main {
     border: 2px solid rgb(0, 0, 0);
     padding: 20px;
     margin: 20px;
+}
 
+.banner h3 {
+    text-align: center;
 }
 
 #closeBanner {
@@ -315,10 +316,15 @@ button.join:hover {
 }
 
 .spotlight {
+    text-align: center;
+}
+
+#spotlight-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
     grid-column: 1 / 4;
+
 }
 
 .spotlight-item {
@@ -326,8 +332,12 @@ button.join:hover {
     padding: 1em;
     /* width: 100%; -- this makes the element fill the whole space */
     border: 1px solid #000000;
-    margin-bottom: 20px;
+    margin: 2em;
     
+}
+/* This is the spotlight activity */
+.spotlight-item img {
+    width: 100px;
 }
 
 /* Adding responsive menu */
@@ -355,10 +365,11 @@ button.join:hover {
 .grid-container {
     display: grid;
     margin: 0 auto;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: .8fr auto;
     grid-template-rows: auto;
     min-height: 100vh;
     width: 100%;
+    justify-content: center;
 }
 
 .sidebar {
@@ -371,11 +382,12 @@ button.join:hover {
     border-radius: 2em;
     border-style: ridge;
     color: var(--mint);
-    width: 75%;
+    grid-column: 1/2;
+    width: 80%;
 }
 
 .sidebar img {
-    width: 250px;
+    width: 100%;
     border: 1px solid #12271b;
 }
 .sidebar h3 {
