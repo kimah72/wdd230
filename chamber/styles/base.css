@@ -371,7 +371,7 @@ button.join:hover {
 
 #spotlight-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     grid-column: 1 / 4;
 }
@@ -383,7 +383,7 @@ button.join:hover {
     margin: 2em;
     line-height: 1.2em;
     text-align: left;
-    max-width: 250px;
+    max-width: 300px;
 }
 
 .spotlight-item img {

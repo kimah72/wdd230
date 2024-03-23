@@ -9,6 +9,9 @@ document.getElementById('lastModified').textContent = "Last Modification: " + do
 document.addEventListener("DOMContentLoaded", function() {
 
     var formSubmissionTimeInput = document.getElementById("formSubmissionTime");
-    
-    formSubmissionTimeInput.value = Date.now();
+    if (formSubmissionTimeInput) {
+        formSubmissionTimeInput.value = Date.now();
+    } else {
+        console.error("Element with ID 'formSubmissionTime' not found.");
+    }
 });
