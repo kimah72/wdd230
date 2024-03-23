@@ -15,26 +15,19 @@ async function fetchMemberData() {
     }
 }
 
-// Function to filter members by status (silver or gold)
 function filterMembersByStatus(members) {
-    return members.filter(member => member.membership === 'Silver' || member.membership === 'Gold');
+    return members.filter(member => member.membership === 'Silver' || member.membership === 'Gold' || member.membership === 'Platinum');
 }
 
-// Function to randomly select members
 function selectRandomMembers(members, count) {
     const shuffledMembers = members.sort(() => 0.5 - Math.random());
     return shuffledMembers.slice(0, count);
 }
 
-// Function to display selected members on the home page
 async function displaySpotlightMembers() {
-    // Fetch member data
     const allMembers = await fetchMemberData();
-
-    // Filter members by status (silver or gold)
     const silverGoldMembers = filterMembersByStatus(allMembers);
 
-    // Select random members from filtered list
     const selectedMembers = selectRandomMembers(silverGoldMembers, 3);
 
     // Loop through selected members and create member cards
@@ -57,10 +50,17 @@ async function displaySpotlightMembers() {
 
         const membLvl = document.createElement('p');
         membLvl.textContent = `Membership Level: ${member.membership}`;
+        membLvl.style.fontWeight = 'bolder';
+
+        const url = document.createElement('a');
+        url.setAttribute("href", `${member.weburl}`);
+        url.setAttribute("target", "_blank");
+        url.textContent = `${member.name} Website`;
 
         memberCard.appendChild(img);
         memberCard.appendChild(h2);
         memberCard.appendChild(phone);
+        memberCard.appendChild(url)
         memberCard.appendChild(information);
         memberCard.appendChild(membLvl);
 

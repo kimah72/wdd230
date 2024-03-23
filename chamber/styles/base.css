@@ -60,18 +60,16 @@ h1 h2 h3 {
 
 main {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr auto;
     margin: 0 auto; /* this confines the content within the grid - if taken out, it stretches the entire space */
     padding: 2em;
-    grid-row: 3 / 5;
+}
+
+main.index {
+    margin: 0;
 }
 
 /* this is css for the chamber div sections */
-
-.events .weather {
-    columns: 1 / 3;
-}
-
 .weather {
     background-color: #9de2c9;
     padding: 20px;
@@ -126,7 +124,7 @@ main.main {
 }
 
 .main {
-    grid-column: 1/3;
+    grid-column: 1 / 3;
 }
 
 main h1 {
@@ -219,6 +217,8 @@ main h1 {
 .member-card p {
     font-size: 16px;
     color: #666;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 /* end of directory */
@@ -226,7 +226,14 @@ main h1 {
 /* Chamber JOIN form css */
 
 main.join-page {
-    grid-column: 1 / 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+.join-page {
+    grid-column: 1/3;
 }
 
 main.thanks {
@@ -239,6 +246,7 @@ main.thanks {
     grid-column: 1 / 3;
 }
 
+
 #chamber-form  {
     max-width: 600px;
     margin: 0 auto;
@@ -247,6 +255,39 @@ main.thanks {
 
 #chamber-form legend {
     font-size: 1.5rem;
+}
+
+.benefits-container {
+    background-color: #fbfbfb;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.benefits-container h2 {
+    font-size: 2rem;
+    color: #3f4b64;
+}
+
+.membership-level {
+    margin-bottom: 20px;
+}
+
+.membership-level h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #3f4b64;
+}
+
+.membership-level ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #3f4b64;
+}
+
+.membership-level ul li {
+    margin-bottom: 5px;
+    font-size: 1.5;
 }
 
 .form-group {
@@ -305,45 +346,13 @@ button.join:hover {
     background-color: #0056b3;
 }
 
-.benefits-container {
-    background-color: #fbfbfb;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.benefits-container h2 {
-    font-size: 2rem;
-    color: #3f4b64;
-}
-
-.membership-level {
-    margin-bottom: 20px;
-}
-
-.membership-level h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: #3f4b64;
-}
-
-.membership-level ul {
-    list-style-type: disc;
-    margin-left: 20px;
-    color: #3f4b64;
-}
-
-.membership-level ul li {
-    margin-bottom: 5px;
-    font-size: 1.5;
-}
-
 /* This is the end of all the form css */
 
 .events {
     border: 1px solid #000000;
     margin-bottom: 20px;
     padding: 1em;
+    /* margin: auto; not sure I want to implement this or not. */
 }
 
 .weather {
@@ -352,8 +361,12 @@ button.join:hover {
     padding: 1em;
 }
 
+/* This is the spotlight activity */
+
 .spotlight {
     text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 #spotlight-container {
@@ -361,18 +374,18 @@ button.join:hover {
     justify-content: space-around;
     align-items: center;
     grid-column: 1 / 4;
-
 }
 
 .spotlight-item {
-    display: flex;
     padding: 1em;
     /* width: 100%; -- this makes the element fill the whole space */
     border: 1px solid #000000;
     margin: 2em;
-    
+    line-height: 1.2em;
+    text-align: left;
+    max-width: 250px;
 }
-/* This is the spotlight activity */
+
 .spotlight-item img {
     width: 100px;
 }
