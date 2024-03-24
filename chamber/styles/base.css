@@ -348,11 +348,30 @@ button.join:hover {
 
 /* This is the end of all the form css */
 
-.events {
+/* this is the events section */
+.events-container {
     border: 1px solid #000000;
     margin-bottom: 20px;
     padding: 1em;
+    width: 75%;
     /* margin: auto; not sure I want to implement this or not. */
+}
+
+.event-card {
+    background-color: #f9f9f9;
+    color: #333333;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.event-card h3 {
+    color: #333;
+}
+
+.event-card p {
+    margin: 5px 0;
 }
 
 .weather {
