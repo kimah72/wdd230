@@ -482,6 +482,7 @@ button.join:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     grid-column: 2/4;
 }
 
@@ -625,6 +626,20 @@ footer {
     }
     .hero h2 {
         font-size: 18px;
+    }
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .sidebar {
+        margin-left: 0;
+    }
+    .content img {
+        margin: 0;
+    }
+    .content {
+        padding: 0;
     }
     #menu {
         display: block;
