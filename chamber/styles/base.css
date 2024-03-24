@@ -1,3 +1,4 @@
+
 /* Style sheet for Chamber of Commerce page */
 
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Questrial&display=swap');
@@ -63,6 +64,7 @@ main {
     grid-template-columns: 2fr auto;
     margin: 0 auto; /* this confines the content within the grid - if taken out, it stretches the entire space */
     padding: 2em;
+    grid-column: 1/4;
 }
 
 main.index {
