@@ -40,18 +40,40 @@ const events = [
 let currentIndex = 0;
 const slideshowContainer = document.getElementById('events-container');
 
+function createEventCard(event) {
+    const eventCard = document.createElement('div');
+    eventCard.classList.add('event-card');
+    eventCard.style.backgroundColor = getBackgroundColor(currentIndex);
+    
+    const title = document.createElement('h3');
+    title.textContent = event.title;
+    
+    const date = document.createElement('p');
+    date.innerHTML = `<strong>Date:</strong> ${event.date}`;
+    
+    const time = document.createElement('p');
+    time.innerHTML = `<strong>Time:</strong> ${event.time}`;
+    
+    const location = document.createElement('p');
+    location.innerHTML = `<strong>Location:</strong> ${event.location}`;
+    
+    const description = document.createElement('p');
+    description.textContent = event.description;
+    
+    eventCard.appendChild(title);
+    eventCard.appendChild(date);
+    eventCard.appendChild(time);
+    eventCard.appendChild(location);
+    eventCard.appendChild(description);
+    
+    return eventCard;
+}
+
 function displayEvent(eventIndex) {
+    slideshowContainer.innerHTML = '';
     const event = events[eventIndex];
-    const eventCard = `
-        <div class="event-card" style="background-color: ${getBackgroundColor(eventIndex)};">
-            <h3>${event.title}</h3>
-            <p><strong>Date:</strong> ${event.date}</p>
-            <p><strong>Time:</strong> ${event.time}</p>
-            <p><strong>Location:</strong> ${event.location}</p>
-            <p>${event.description}</p>
-        </div>
-    `;
-    slideshowContainer.innerHTML = eventCard;
+    const eventCard = createEventCard(event);
+    slideshowContainer.appendChild(eventCard);
 }
 
 function nextEvent() {
@@ -60,9 +82,7 @@ function nextEvent() {
 }
 
 function getBackgroundColor(index) {
-    // Define an array of colors to be used for the background
     const colors = ['#ff9999', '#99ff99', '#9999ff', '#ffff99', '#99ffff'];
-    // Return a color from the array based on the index
     return colors[index % colors.length];
 }
 
