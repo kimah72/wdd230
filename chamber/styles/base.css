@@ -68,7 +68,8 @@ main {
 }
 
 main.index {
-    margin: 0;
+    margin: 0 auto;
+    width: 1000px;
 }
 
 /* this is css for the chamber div sections */
@@ -89,6 +90,7 @@ main.index {
     padding-right: 3rem;
     padding-left: 3rem;
     justify-content: center;
+    color: #333333;
 }
 /* Mon, Wed, Fri Banner */
 .banner {
@@ -289,7 +291,6 @@ main.thanks {
 
 .membership-level ul li {
     margin-bottom: 5px;
-
 }
 
 .form-group {
@@ -353,10 +354,7 @@ button.join:hover {
 /* this is the events section */
 .events-container {
     border: 1px solid #000000;
-    margin-bottom: 20px;
     padding: 1em;
-    width: 75%;
-    /* margin: auto; not sure I want to implement this or not. */
 }
 
 .event-card {
@@ -380,6 +378,7 @@ button.join:hover {
     border: 1px solid #000000;
     margin-bottom: 20px;
     padding: 1em;
+    color: #333333;
 }
 
 /* This is the spotlight activity */
@@ -404,7 +403,6 @@ button.join:hover {
     margin: 2em;
     line-height: 1.2em;
     text-align: left;
-    max-width: 300px;
 }
 
 .spotlight-item img {
@@ -567,6 +565,8 @@ header.hero {
 }
 
 .hero-content {
+    font-family: --heading-font;
+    font-size: 1.5em;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -588,7 +588,6 @@ header.hero {
     border-radius: 5em;
     color: white;
     border: none;
-    cursor: pointer;
     z-index: 1;
 }
 

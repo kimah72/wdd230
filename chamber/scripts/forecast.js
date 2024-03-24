@@ -42,6 +42,10 @@ function displayforecast(data) {
     day2.innerHTML = `${dateSecondDay} - ${tempSecondDay}&deg;F`;
     day3.innerHTML = `${dateThirdDay} - ${tempThirdDay}&deg;F`;
 
+    day1.style.color = "blue"; 
+    day2.style.color = "green"; 
+    day3.style.color = "red";
+
     div.appendChild(day1);
     div.appendChild(day2);
     div.appendChild(day3);
