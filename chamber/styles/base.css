@@ -608,7 +608,7 @@ footer {
 }
 /* Media query for smaller screen */
 
-@media screen and (max-width: 40em) {
+@media screen and (max-width: 50em) {
     /* .hero-content button {
         display: block;
     } */
