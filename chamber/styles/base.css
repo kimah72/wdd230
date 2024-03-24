@@ -615,4 +615,8 @@ footer {
     #menu {
         display: block; /* Show the menu on smaller screens */
     }
+    main.join-page {
+        display: block;
+        col
+    }
 }
