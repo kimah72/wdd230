@@ -69,7 +69,6 @@ main {
 
 main.index {
     margin: 0 auto;
-    width: 1000px;
 }
 
 /* this is css for the chamber div sections */
@@ -612,10 +611,22 @@ footer {
     /* .hero-content button {
         display: block;
     } */
+    main.index {
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+    }
     main.join-page {
         display: block;
     }
+    #spotlight-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .hero h2 {
+        font-size: 18px;
+    }
     #menu {
-        display: block; /* Show the menu on smaller screens */
+        display: block;
     }
 }
