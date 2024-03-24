@@ -612,11 +612,10 @@ footer {
     /* .hero-content button {
         display: block;
     } */
-    #menu {
-        display: block; /* Show the menu on smaller screens */
-    }
     main.join-page {
         display: block;
-        col
+    }
+    #menu {
+        display: block; /* Show the menu on smaller screens */
     }
 }
