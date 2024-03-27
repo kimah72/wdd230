@@ -11,7 +11,7 @@ const events = [
         date: "April 25, 2024",
         time: "6:00 PM - 8:00 PM",
         location: "Spanish Fork Art Gallery",
-        description: "Mix and mingle with members of the Spanish Fork Chamber of Commerce at our Spring Social event. Enjoy refreshments, live music, and an opportunity to connect with local business owners and community leaders.."
+        description: "Mix and mingle with members of the Spanish Fork Chamber of Commerce at our Spring Social event. Enjoy refreshments, live music, and an opportunity to connect with local business owners and community leaders."
     },
     {
         title: "Small Business Workshop: Marketing Strategies for Growth",
