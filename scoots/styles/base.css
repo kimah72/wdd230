@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Caveat:wght@400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-family: 'Caveat', cursive;
+    font-size: 36px;
+}
+header {
+    display: flex;
+    background-color: white;
+    justify-content: space-around;
+    align-items: center;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border-bottom: 1px solid black;
+}
+
+.logo img {
+    width: 200px;
+    margin: 5px 5px 5px 1em;
+}
+
+header h1 {
+    font-family: "Bungee Spice", sans-serif;
+    font-size: 75px;
+    margin-top: .5em;
+}
+
+.navigation {
+    text-align: center;
+    width: 100%;
+}
+
+.navigation ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 1em 0;
+}
+
+.navigation li {
+    margin-top: 5em;
+    flex: 1 1 auto;
+}
+  
+.navigation a {
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 5px;
+    transition: border-color 0.3s;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+nav a:hover {
+    border-color: black;
+}
+
+a.current {
+    color: #FF780A;
+    border-bottom: none;
+}
+/* Weather JS */
+#weather-banner {
+    display: none; /* Initially hide the banner */
+    position: relative;
+    width: 100%;
+    background-color: black; /* Use the desired background color */
+    padding: 10px 20px; /* Adjust padding as needed */
+    box-sizing: border-box;
+    text-align: center; /* Center the text horizontally */
+    color: #F4F7F5; /* Set text color */
+}
+
+#weather-banner button {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #F4F7F5;
+}
+
+#weather-banner button:hover {
+    text-decoration: underline;
+}
+
+/* hero banner */
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#hero-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 62%;
+    left: 32%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 10;
+    width: auto;
+    min-width: 60%;
+}
+
+.hero-text p {
+    font-size: 2em;
+    margin-bottom: 50px;
+    white-space: nowrap;
+}
+
+a.button, .button {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button {
+    background-color: #ff4010;
+    border: 1px solid black;
+    border-radius: 50px;
+    padding: 9px 20px;
+    margin: 10px;
+}
+/* div container decoration */
+.backsplash {
+    margin: 4em auto;
+    padding: 1em 1em;
+    background-color: white;
+    border-radius: 1em;
+}
+.backsplash h2 {
+    font-family: "Caveat", cursive;
+    font-size: 60px;
+    margin: 10px auto 0;
+}
+
+a.index {
+    text-decoration: none;
+}
+.btn {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #ff4010;
+    border: 1px solid black;
+    border-radius: 1em;
+    padding: 5px 10px;
+}
+
+/* main body */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack items vertically */
+    min-height: 100vh;
+}
+/* four different types of main classes for each page */
+
+main.index {
+    width: auto;
+    text-align: center;
+}
+
+main.rentals {
+    width: auto;
+}
+
+main.reservation {
+    width: auto;
+    text-align: center;
+}
+
+main.contact {
+    width: auto;
+}
+/* end of main css */
+
+/* Location pics */
+#locations {
+    display: flex;
+}
+.locations {
+    margin: 2em 1em;
+    border-radius: .5em;
+    box-shadow: 0 4px 8px 0 rgb(59, 59, 59), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  
+}
+
+.locations img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+/* slideshow of rentals - from w3schools */
+* {box-sizing: border-box}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    margin: 2em;
+  }
+
+  /* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+ 
+  /* Position the "next button" to the right */
+.next {
+    right: -2.25em;
+    border-radius:0 3px 3px 0;
+}
+.prev {
+    left: -2.25em;
+    border-radius: 3px 0 0 3px;
+}
+  /* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+}
+  
+  /* Caption text */
+  .text {
+    color: black;
+    font-size: 1em;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: -1;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/5 etc) */
+  .numbertext {
+    color: black;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    text-align: center;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+/* pricing html */
+/* table css */
+#rental-table {
+    border-collapse: collapse;
+    margin-top: 20px; /* Adjust spacing as needed */
+    width: auto; /* Set width to auto to only take up necessary space */
+    border: 1px solid black;
+}
+
+#rental-table th {
+    background-color: black;
+    color: #F4F7F5;
+    padding: 10px; /* Reduce padding for header */
+}
+
+#rental-table tbody tr:nth-child(even) {
+    background-color: #dddddd; /* Alternate background color for even rows */
+}
+
+#rental-table tbody tr:nth-child(odd) {
+    background-color: #ffffff; /* Default background color for odd rows */
+}
+
+#rental-table td {
+    padding: 8px; /* Reduce padding for cells */
+    text-align: center;
+}
+
+/* contact page */
+#contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1em;
+    text-align: center;
+}
+
+#contact-form legend {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    padding: 1em 0;
+    margin-left: 1em;
+    text-align: left;
+
+}
+
+#contact-form fieldset {
+    margin: 20px auto;
+    max-width: 100%;
+    width: 475px;
+    border: 1px solid #333;
+    border-radius: 1em;
+    padding: 0 10px 2% 2%;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#contact-form label {
+    display: block;
+    margin-left: 1em;
+    margin-bottom: .5em;
+    font-weight: bold;
+    text-align: left;
+}
+
+#contact-form input[type="submit"] {
+    background-color: #FF780A;
+    border: solid 1px black;
+    border-radius: 2em;
+    padding: 10px;
+    margin: 0 auto .75em;
+    width: 50%;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    max-width: 400px;
+    background-color: white;
+    color: black;
+    padding: 1em;
+    border: 1px solid black;
+    border-radius: .5em;
+    margin-bottom: 1em;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+footer {
+    background-color: white;
+    color: black;
+    border-top: 1px solid black;
+    margin-top: 4em;
+    padding: 2em;
+}
+
+footer h2 {
+    text-align: center;
+}
+
+footer ul li {
+    display: inline;
+    text-align: left;
+    text-decoration: none;
+}

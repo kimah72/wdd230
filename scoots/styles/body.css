@@ -1,0 +1,43 @@
+/* This is the background for the body since it is stylized - I felt a retro 90's vibe coming on */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif, 'Caveat', cursive;
+    background: linear-gradient(to right, #000000, #ffffff);
+    height: 100%;
+    width: 100%;
+    }
+.header-lines,
+.footer-lines {
+    left: 0;
+    right: 0;
+    height: 1em;
+    background-color: #ff4010;
+    z-index: -1;
+    border: 1px solid black;
+}
+
+.header-lines {
+    position: fixed;
+    top: 10em;
+}
+.footer-lines {
+    position: fixed;
+    bottom: 10em;
+}
+.vertical-lines {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 2em; 
+    background-color: #FF9A47;
+    z-index: -1;
+    height: auto;
+    border: 1px solid black;
+}
+.vertical-lines.left {
+    left: 8em;
+}
+.vertical-lines.right {
+    right: 8em;
+}
