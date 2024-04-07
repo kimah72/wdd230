@@ -10,10 +10,10 @@ function populateTable() {
           row.innerHTML = `
             <td>${rental.RentalType}</td>
             <td>${rental.MaxPersons}</td>
-            <td>${rental.HalfDayReservation}</td>
-            <td>${rental.FullDayReservation}</td>
-            <td>${rental.HalfDayWalkIn}</td>
-            <td>${rental.FullDayWalkIn}</td>
+            <td>$${rental.HalfDayReservation}</td>
+            <td>$${rental.FullDayReservation}</td>
+            <td>$${rental.HalfDayWalkIn}</td>
+            <td>$${rental.FullDayWalkIn}</td>
           `;
   
           tableBody.appendChild(row);
@@ -22,5 +22,5 @@ function populateTable() {
       .catch(error => console.error('Error fetching data:', error));
   }
   
-  // Call the function to populate the table when the DOM content is loaded
+
   document.addEventListener('DOMContentLoaded', populateTable);
