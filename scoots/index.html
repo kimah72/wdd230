@@ -33,7 +33,8 @@
             </ul>
         </nav>
     </header>
-    <div id="weather-banner"></div>
+    <main class="index">
+        <div id="weather-banner"></div>
     <div class="hero-image">
         <picture>
             <source srcset="images/hero-small.webp" media="(max-width: 500px)">
@@ -42,17 +43,18 @@
         </picture>
         <div class="hero-text">
             <div class="button-container">
-                <button class="button" onclick="location.href='https://kimah72.github.io/wdd230/scoots/reservations.html'">Reserve Yours Today!</button>
+                <button class="button" onclick="location.href='https://kimah72.github.io/wdd230/scoots/reservations.html'">Reserve Yours Today</button>
             </div>
         </div>
     </div>
-    <main class="index">
         <div class="backsplash">
             <h2>Explore Cozumel with Scoots</h2>
             <br>
             <p>Rent a scooter, jeep, or ATV and experience the beauty of the island.</p>
             <br>
-            <a href="reservations.html" class="btn">Make a Reservation</a>
+            <div class="button-container">
+                <button class="button" onclick="location.href='https://kimah72.github.io/wdd230/scoots/reservations.html'">Book Now</button>
+            </div>
             <div id="locations">
                 <div class="location-card">
                     <img class="locations" src="images/scoots-disney.webp" alt="Cozumel" loading="lazy" height="400">
@@ -73,6 +75,9 @@
         <div class="backsplash">
             <h2>Rentals</h2>
                 <p>Honda Motor Scooters | Side-by-Side | ATVs | Jeeps</p>
+                <div class="button-container">
+                    <button class="button" onclick="location.href='https://kimah72.github.io/wdd230/scoots/reservations.html'">Explore Options</button>
+                </div>
             <div class="slideshow-container">
                 <div class="mySlides fade">
                   <div class="numbertext">1 / 6</div>
@@ -123,7 +128,7 @@
                   <span class="dot" onclick="currentSlide(5)"></span>
                   <span class="dot" onclick="currentSlide(6)"></span>
                 </div>
-        <!-- Weather information -->
+        <!-- Weather block -->
             <h2>Weather</h2>
             <div id="weather-info"></div>
         </div>

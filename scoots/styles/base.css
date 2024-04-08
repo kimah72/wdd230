@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Caveat:wght@400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 h2 {
     font-family: 'Caveat', cursive;
     font-size: 36px;
@@ -69,7 +63,7 @@ a.current {
 }
 /* Weather JS */
 #weather-banner {
-    display: none; /* Initially hide the banner */
+
     position: relative;
     width: 100%;
     background-color: black; /* Use the desired background color */
@@ -260,8 +254,8 @@ main.contact {
 background-color: rgba(0,0,0,0.8);
 }
   
-  /* Caption text */
-  .text {
+/* Caption text */
+.text {
     color: black;
     font-size: 1em;
     padding: 8px 12px;
@@ -269,19 +263,19 @@ background-color: rgba(0,0,0,0.8);
     bottom: -1;
     width: 100%;
     text-align: center;
-  }
+}
   
   /* Number text (1/5 etc) */
-  .numbertext {
+.numbertext {
     color: black;
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
     top: 0;
-  }
+}
   
-  /* The dots/bullets/indicators */
-  .dot {
+/* The dots/bullets/indicators */
+.dot {
     cursor: pointer;
     height: 15px;
     width: 15px;
@@ -291,17 +285,61 @@ background-color: rgba(0,0,0,0.8);
     display: inline-block;
     transition: background-color 0.6s ease;
     text-align: center;
-  }
+}
   
-  .active, .dot:hover {
+.active, .dot:hover {
     background-color: #717171;
-  }
+}
   
   /* Fading animation */
-  .fade {
+.fade {
     animation-name: fade;
     animation-duration: 1.5s;
-  }
+}
+
+/* weather css */
+#weather-info {
+    background-color: rgb(187, 219, 238);
+    padding: 1em;
+    margin: 0 auto;
+    border-radius: 1em;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 350px;
+}
+
+#weather-info h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.weather-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.weather-item img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.weather-item p {
+    margin: 0;
+    color: #333;
+}
+
+.weather-item p:first-child {
+    font-weight: bold;
+}
+
+.weather-item p:last-child {
+    font-style: italic;
+}
 /* pricing html */
 /* table css */
 #rental-table {

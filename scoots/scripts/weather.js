@@ -26,9 +26,6 @@ function fetchWeatherData() {
             weatherIconElement.src = `https://openweathermap.org/img/w/${weatherIcon}.png`;
             weatherIconElement.alt = weatherDescription;
 
-            const maxTemperatureElement = document.createElement('div');
-            maxTemperatureElement.textContent = `Max temperature today: ${maxTemperature}°F`;
-
             // Clear existing content in #weather-info div
             const weatherInfoDiv = document.getElementById('weather-info');
             weatherInfoDiv.innerHTML = '';

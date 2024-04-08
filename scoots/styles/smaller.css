@@ -57,11 +57,11 @@
     }
 
     .hamburger-menu {
-        display: block; /* Show the hamburger menu */
-        text-align: center; /* Center the hamburger menu */
+        display: block;
+        text-align: center;
     }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 450px) {
     header h1 {
         font-size: 55px;
         text-align: left;
