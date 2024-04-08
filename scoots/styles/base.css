@@ -150,7 +150,7 @@ a.button, .button {
 }
 .backsplash h2 {
     font-family: "Caveat", cursive;
-    font-size: 60px;
+    font-size: 50px;
     margin: 10px auto 0;
 }
 
@@ -191,7 +191,7 @@ main.rentals {
 
 main.reservation {
     width: auto;
-    text-align: center;
+    text-align: left;
 }
 
 main.contact {
@@ -260,7 +260,6 @@ background-color: rgba(0,0,0,0.8);
     font-size: 1em;
     padding: 8px 12px;
     position: absolute;
-    bottom: -1;
     width: 100%;
     text-align: center;
 }
