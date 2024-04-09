@@ -15,8 +15,9 @@ header {
     border-bottom: 1px solid black;
 }
 
-.logo img {
+.logo {
     width: 200px;
+    height: auto;
     margin: 5px 5px 5px 1em;
 }
 
@@ -61,6 +62,26 @@ a.current {
     color: #FF780A;
     border-bottom: none;
 }
+/* menu */
+
+#menu {
+    position: absolute;
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #344467;
+	top: 2.5rem;
+	right: 2.5rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "X";
+}
+
 /* Weather JS */
 #weather-banner {
 
@@ -141,12 +162,12 @@ a.button, .button {
     padding: 9px 20px;
     margin: 10px;
 }
-/* div container decoration */
+/* div container decoration - still working on this to be cohesive 4/7/24 */
 .backsplash {
-    margin: 4em auto;
+    margin: 2em auto;
     padding: 1em 1em;
     background-color: white;
-    border-radius: 1em;
+    border-radius: 10px;
 }
 .backsplash h2 {
     font-family: "Caveat", cursive;
@@ -200,18 +221,13 @@ main.contact {
 /* end of main css */
 
 /* Location pics */
-#locations {
-    display: flex;
-}
-.locations {
-    margin: 2em 1em;
+/* went to the root id and all images are affected - made responsive - 4/7/24 */
+#locations img {
+    margin: 0 auto;
     border-radius: .5em;
-    box-shadow: 0 4px 8px 0 rgb(59, 59, 59), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  
-}
-
-.locations img {
+    box-shadow: 0 4px 8px 0 rgb(55, 55, 55), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
     display: block;
-    max-width: 100%;
+    width: 95%;
     height: auto;
 }
 /* slideshow of rentals - from w3schools */
@@ -221,7 +237,11 @@ main.contact {
 .slideshow-container {
     position: relative;
     margin: 2em;
-  }
+}
+.slideshow-container img{
+    width: 100%;
+    height: auto;
+}
 
   /* Next & previous buttons */
 .prev, .next {
