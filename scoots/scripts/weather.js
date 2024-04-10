@@ -23,8 +23,11 @@ function fetchWeatherData() {
             weatherDescriptionElement.textContent = `Weather Description: ${weatherDescription}`;
 
             const weatherIconElement = document.createElement('img');
-            weatherIconElement.src = `https://openweathermap.org/img/w/${weatherIcon}.png`;
+            weatherIconElement.src = `https://openweathermap.org/img/wn/${weatherIcon}.png`;
             weatherIconElement.alt = weatherDescription;
+
+            const maxTemperatureElement = document.createElement('div');
+            maxTemperatureElement.textContent = `Max temperature today: ${maxTemperature}°F`;
 
             // Clear existing content in #weather-info div
             const weatherInfoDiv = document.getElementById('weather-info');
@@ -35,6 +38,7 @@ function fetchWeatherData() {
             weatherInfoDiv.appendChild(currentHumidityElement);
             weatherInfoDiv.appendChild(weatherDescriptionElement);
             weatherInfoDiv.appendChild(weatherIconElement);
+            weatherInfoDiv.appendChild(maxTemperatureElement);
 
             // Display weather banner with max temperature
             displayWeatherBanner(maxTemperature);
@@ -49,7 +53,7 @@ function displayWeatherBanner(maxTemperature) {
     weatherBanner.textContent = `Max temperature today in Cozumel: ${maxTemperature}°F`;
 
     const closeButton = document.createElement('button');
-    closeButton.textContent = '❎';
+    closeButton.textContent = 'Close';
     closeButton.id = 'close-btn';
     closeButton.addEventListener('click', closeWeatherBanner);
     weatherBanner.appendChild(closeButton);

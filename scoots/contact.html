@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kimberly Miner">
+    <meta name="description" content="Explore your destination in style with our rental fleet of scooters, jeeps, and side by sides. Rent the perfect vehicle for your adventure today!">
+    <meta property="og:title" content="Scoots Rental Website"> 
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://kimah72.github.io/wdd230/scoots/images/jeeps.jpg">
+    <meta property="og:url" content="https://kimah72.github.io/wdd230/scoots/contact.html">
+    <title>Scoots | Motor Scooter and Jeep Rental Company</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/body.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/smaller.css">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.webp" alt="volcano" loading="lazy" width="200" height="130">
+        </div>
+        <h1>Scoots</h1>
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="rentals.html">RENTALS</a></li>
+                <li><a href="reservations.html">RESERVATION</a></li>
+                <li><a href="#" class="current">CONTACT</a></li>
+            </ul>
+        </nav>
+        <button id="menu"></button>
+    </header>
+    <div id="weather-banner"></div>
+    <div class="hero-image">
+        <picture>
+            <source srcset="images/hero-small2.webp" media="(max-width: 500px)">
+            <source srcset="images/hero-med2.webp" media="(max-width: 850px)">
+            <img src="images/hero2.webp" alt="Cozumel Hero" width="1200" height="444" loading="lazy" id="hero-img">
+        </picture>
+        <div class="hero-text">
+            <h2>Contact Info</h2>
+            <div class="button-container">
+                <button class="button" onclick="location.href='https://kimah72.github.io/wdd230/scoots/reservations.html'">Reserve Yours Today</button>
+            </div>
+        </div>
+    </div>
+    <!-- Main content section -->
+    <main class="contact">
+        <!-- Contact form -->
+        <div class="backsplash">
+            <section class="contact-info">
+                <h3>Need More Information?</h3>
+                <br>
+                <p>For inquiries or assistance, feel free to contact us directly or use the form below:</p>
+                <br>
+                <ul>
+                    <li><strong>Phone:</strong> +1-234-567-8901</li>
+                    <li><strong>Email:</strong> info@scoots-cozumel.com</li>
+                    <li><strong>Address:</strong> 123 Calle Hidalgo, Cozumel, Mexico</li>
+                </ul>
+            </section>
+            <form action="https://kimah72.github.io/wdd230/scoots/thankyou.html" method="get" class="contact-form">
+                <fieldset>
+                    <legend>Contact Form</legend>
+                    <label>First Name* 
+                        <input type="text" id="fname" name="fname" required>
+                    </label>
+                    <label>Last Name*
+                        <input type="text" id="lname" name="lname" required>
+                    </label>
+                    <label>Email*
+                        <input type="email" id="email" name="email" placeholder="someone@gmail.com" required>
+                    </label>
+                    <label>Message*
+                        <textarea id="comment" name="comment" rows="4" cols="50" required placeholder="Please enter your message here:"></textarea>
+                    </label>
+                    <input type="submit" value="Send Message">
+                </fieldset>
+            </form>
+        </div>
+        <!-- Embedded Google map -->
+        <div class="backsplash">
+            <section class="google-map">
+                <h3>Our Locations</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d29898.561421763985!2d-86.98038455342977!3d20.493096935605678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x8f4e57491a71c81d%3A0x6933058e58e0ee3d!2sPuerta%20Maya%20Cruise%20Ship%20Maritime%20Terminal%2C%20San%20Miguel%20de%20Cozumel%2C%20Quintana%20Roo%2C%20Mexico!3m2!1d20.4765505!2d-86.9734337!4m5!1s0x8f4e59cceda3d799%3A0xbf8ea7e97451cfd8!2sCentro%2C%20San%20Miguel%20de%20Cozumel%2C%20Quintana%20Roo%2C%20Mexico!3m2!1d20.5111971!2d-86.94613609999999!5e0!3m2!1sen!2sus!4v1712614623004!5m2!1sen!2sus" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+        </div>
+        <!-- This is where the framework for the background aesthetic -->
+        <div class="paper">
+            <div class="header-lines"></div>
+            <div class="footer-lines"></div>
+            <div class="vertical-lines left"></div>
+            <div class="vertical-lines right"></div>
+        </div>
+        <!-- fin -->
+    </main>
+    <footer>
+        <section class="social-media">
+            <h3>Connect with Us</h3>
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/fb.png" width="60" height="60" alt="fb icon">
+            </a>
+            <a href="https://X.com" target="_blank">
+                <img src="images/X.webp" width="60" height="60" alt="twitter icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/IG.png" width="60" height="60" alt="instagram icon">
+            </a>                       
+        </section>
+        <div class="tagline">
+            <p>&copy; <span id="currentyear"></span> | Kimberly Miner | WDD 230 <p id="lastModified"></p></p>
+        </div>
+    </footer>
+    <script src="scripts/menu.js"></script>
+</body>
+</html>

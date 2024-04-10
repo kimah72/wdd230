@@ -7,8 +7,8 @@
     <meta name="description" content="Explore your destination in style with our rental fleet of scooters, jeeps, and side by sides. Rent the perfect vehicle for your adventure today!">
     <meta property="og:title" content="Scoots Rental Website"> 
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://kimah72.github.io/wdd230/scoots/images/beep-beep.webp">
-    <meta property="og:url" content="https://kimah72.github.io/wdd230/scoots/index.html">
+    <meta property="og:image" content="https://kimah72.github.io/wdd230/images/sfpic.webp">
+    <meta property="og:url" content="https://kimah72.github.io/wdd230/scoots/contact.html">
     <title>Scoots | Motor Scooter and Jeep Rental Company</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/body.css">
@@ -19,13 +19,13 @@
 <body>
     <header>
         <div class="logo">
-            <img src="images/logo.webp" alt="volcano" width="200" height="130">
+            <img src="images/logo.webp" alt="volcano" loading="lazy" width="200" height="130">
         </div>
         <h1>Scoots</h1>
         <nav class="navigation">
             <ul>
-                <li><a href="#" class="current">HOME</a></li>
-                <li><a href="rentals.html">RENTALS</a></li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#" class="current">RENTALS</a></li>
                 <li><a href="reservations.html">RESERVATION</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
             </ul>
@@ -35,49 +35,43 @@
     <div id="weather-banner"></div>
     <div class="hero-image">
         <picture>
-            <source srcset="images/hero-small.webp" media="(max-width: 500px)">
-            <source srcset="images/hero-med.webp" media="(max-width: 800px)">
-            <img src="images/hero.webp" alt="Cozumel Hero" width="1277" height="473" loading="lazy" id="hero-img">
+            <source srcset="images/hero-small2.webp" media="(max-width: 500px)">
+            <source srcset="images/hero-med2.webp" media="(max-width: 850px)">
+            <img src="images/hero2.webp" alt="Cozumel Hero" width="1200" height="444" loading="lazy" id="hero-img">
         </picture>
         <div class="hero-text">
+            <h2>Rental Prices</h2>
             <div class="button-container">
                 <button class="button" onclick="location.href='https://kimah72.github.io/wdd230/scoots/reservations.html'">Reserve Yours Today</button>
             </div>
         </div>
     </div>
-    <main class="index">
+    <main class="rentals">
         <div class="backsplash">
-            <h3>Explore Cozumel with Scoots</h3>
-            <br>
-            <p>Rent a scooter, jeep, or ATV and experience the beauty of the island.</p>
-            <br>
-            <div class="button-container">
-                <button class="button" onclick="location.href='https://kimah72.github.io/wdd230/scoots/reservations.html'">Book Now</button>
-            </div>
-            <div id="locations">
-                <div class="location-card">
-                    <img src="images/scoots-disney-400.webp" alt="Cozumel" loading="lazy" width="400" height="400">
-                    <h3>Central Cozumel Location</h3>
-                    <p>123 Calle Hidalgo<br>Cozumel, Quintana Roo 77600</p>
-                    <p>Phone: +1 234 567 8901</p>
-                    <p>Email: info@scoots-cozumel.com</p>
-                </div>
-                <div class="location-card">                    
-                    <img src="images/scoots-second-400.webp" alt="Cozumel" loading="lazy" width="400" height="400">
-                    <h3>Puerta Maya Terminal Location</h3>
-                    <p>456 Calle Jazmin<br>Puerta Maya, Cozumel, Quintana Roo 77600</p>
-                    <p>Phone: +1 234 567 8902</p>
-                    <p>Email: info@scoots-cozumel.com</p>
-                </div>
-            </div>
+            <h3>Rentals</h3>
+            <table id="rental-table">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <th colspan="2">Reservation</th>
+                        <th colspan="2">Walk-In</th>
+                    </tr>
+                    <tr>
+                        <th>Rental Type</th>
+                        <th>Max. Persons</th>
+                        <th>Half Day (3 hrs)</th>
+                        <th>Full Day</th>
+                        <th>Half Day (3 hrs)</th>
+                        <th>Full Day</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Table body will be dynamically populated here -->
+                </tbody>
+            </table>
         </div>
         <div class="backsplash">
-            <!-- new images and making the ratio equal and cohesive to fit background 4/8/24 -->
-            <h3>Rentals</h3>
-                <p>Honda Motor Scooters | Side-by-Side | ATVs | Jeeps</p>
-                <div class="button-container">
-                    <button class="button" onclick="location.href='https://kimah72.github.io/wdd230/scoots/reservations.html'">Explore Options</button>
-                </div>
             <div class="slideshow-container">
                 <div class="mySlides fade">
                   <div class="numbertext">1 / 6</div>
@@ -114,22 +108,20 @@
                     <img src="images/jeep-wrangler-2.webp" loading="lazy" alt="geep 2 door" width="400" height="302">
                     <div class="text">Jeep Wrangler - 2 door - 4 person</div>
                 </div>
-                
+                            
                 <a class="prev" onclick="plusSlides(-1)">❮</a>
                 <a class="next" onclick="plusSlides(1)">❯</a>
+                
                 </div>
                 <br>                
                 <div>
-                  <span class="dot" onclick="currentSlide(1)"></span> 
-                  <span class="dot" onclick="currentSlide(2)"></span> 
-                  <span class="dot" onclick="currentSlide(3)"></span>
-                  <span class="dot" onclick="currentSlide(4)"></span>
-                  <span class="dot" onclick="currentSlide(5)"></span>
-                  <span class="dot" onclick="currentSlide(6)"></span>
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
                 </div>
-        <!-- Weather block -->
-            <h3>Weather</h3>
-            <div id="weather-info"></div>
         </div>
         <!-- This is where the framework for the background aesthetic -->
         <div class="paper">
@@ -140,7 +132,6 @@
         </div>
         <!-- fin -->
     </main>
-
     <footer>
         <section class="social-media">
             <h3>Connect with Us</h3>
@@ -158,8 +149,8 @@
             <p>&copy; <span id="currentyear"></span> | Kimberly Miner | WDD 230 <p id="lastModified"></p></p>
         </div>
     </footer>
-    <script src="scripts/weather.js"></script>
-    <script src="scripts/slideshow.js"></script>
+    <script src="scripts/pricing.js"></script>
     <script src="scripts/menu.js"></script>
+    <script src="scripts/slideshow.js"></script>
 </body>
 </html>
