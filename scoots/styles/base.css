@@ -240,11 +240,19 @@ main.reservation {
     text-align: left;
 }
 
-main.contact {
+main.contact h2 {
     width: auto;
+    text-align: center;
 }
 /* end of main css */
+.contact-info {
+    margin: 1em 3em;
 
+}
+
+.contact-info ul {
+    list-style-type: none;
+}
 /* Location pics */
 /* went to the root id and all images are affected - made responsive - 4/7/24 */
 
