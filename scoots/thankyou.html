@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Kimberly Miner">
+        <meta name="description" content="Explore your destination in style with our rental fleet of scooters, jeeps, and side by sides. Rent the perfect vehicle for your adventure today!">
+        <meta property="og:title" content="Scoots Rental Website"> 
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://kimah72.github.io/wdd230/scoots/images/beep-beep.webp">
+        <meta property="og:url" content="https://kimah72.github.io/wdd230/scoots/index.html">
+        <title>Scoots | Motor Scooter and Jeep Rental Company</title>
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/body.css">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/smaller.css">
+        <link rel="icon" href="images/favicon.ico">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="images/logo.webp" alt="volcano" width="200" height="130">
+            </div>
+            <h1>Scoots</h1>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="#" class="current">HOME</a></li>
+                    <li><a href="rentals.html">RENTALS</a></li>
+                    <li><a href="reservations.html">RESERVATION</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+            <button id="menu"></button>
+        </header>
+        <div class="hero-image">
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+                <source srcset="images/hero-med.webp" media="(max-width: 800px)">
+                <img src="images/hero.webp" alt="Cozumel Hero" width="1277" height="473" loading="lazy" id="hero-img">
+            </picture>
+            <div class="hero-text">
+                <div class="button-container">
+                    <button class="button" onclick="location.href='https://kimah72.github.io/wdd230/scoots/reservations.html'">Reserve Yours Today</button>
+                </div>
+            </div>
+        </div>
+        <main class="thanks">
+            <div class="backsplash">
+            <h2>Thank you for Submitting your form</h2>
+            </div>
+            <!-- This is where the framework for the background aesthetic -->
+        <div class="paper">
+            <div class="header-lines"></div>
+            <div class="footer-lines"></div>
+            <div class="vertical-lines left"></div>
+            <div class="vertical-lines right"></div>
+        </div>
+        <!-- fin -->
+        </main>
+
+        <footer>
+            <p>&copy; <span id="currentyear"></span> | Kimberly Miner | WDD 230</p>
+            <p id="lastModified"></p>
+        </footer>
+        <script src="scripts/menu.js"></script>
+    </body>
+</html>
+<!-- everything is working 2/29/24 -->

@@ -4,8 +4,6 @@
 body {
     font-family: 'Raleway', sans-serif, 'Caveat', cursive;
     background: linear-gradient(to right, #000000, #ffffff);
-    height: 100%;
-    width: 100%;
     }
 .header-lines,
 .footer-lines {

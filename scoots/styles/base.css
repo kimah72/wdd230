@@ -5,50 +5,62 @@ h2 {
     font-size: 36px;
 }
 header {
-    display: flex;
+    display: grid;
     background-color: white;
-    justify-content: space-around;
     align-items: center;
-    top: 0;
-    left: 0;
-    z-index: 1;
     border-bottom: 1px solid black;
 }
+#menu {
+    display: block;  /* first of hamburger code - turn off */
+}
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background-color: #201E20;
+    color: #FCEDDA; /*color of bars and X*/
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+}
 
-.logo {
-    width: 200px;
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+.logo img {
+    width: 250px;
     height: auto;
-    margin: 5px 5px 5px 1em;
+    margin: 5px 5px 5px 5em;
+    
 }
 
 header h1 {
     font-family: "Bungee Spice", sans-serif;
     font-size: 75px;
-    margin-top: .5em;
+    margin:.5em auto 0 0
+    
 }
 
 .navigation {
-    text-align: center;
-    width: 100%;
-}
-
-.navigation ul {
     display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 1em 0;
+    width: 100%;
+    grid-column: 3 / 4;
 }
-
-.navigation li {
-    margin-top: 5em;
-    flex: 1 1 auto;
+/* tested to here with what I need for menu */
+.navigation ul {
+    list-style-type: none;
 }
   
 .navigation a {
+    display: flex;
     text-decoration: none;
     color: black;
     border-bottom: 2px solid transparent;
-    padding-bottom: 5px;
+    padding-bottom: .5em;
     transition: border-color 0.3s;
     font-size: 16px;
     font-weight: bolder;
@@ -65,13 +77,18 @@ a.current {
 /* menu */
 
 #menu {
+    display: none;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background-color: black;
+    border-radius: 50%;
+    color: white;
     position: absolute;
-	font-size: 1.5rem;
-	border: 0;
-	background: none;
-	color: #344467;
-	top: 2.5rem;
-	right: 2.5rem;
+    top: .75em;
+    right: .75em;
 }
 
 #menu::before {
@@ -82,31 +99,34 @@ a.current {
 	content: "X";
 }
 
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "X";
+}
 /* Weather JS */
 #weather-banner {
 
     position: relative;
     width: 100%;
-    background-color: black; /* Use the desired background color */
-    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: black;
+    padding: 10px 20px;
     box-sizing: border-box;
-    text-align: center; /* Center the text horizontally */
-    color: #F4F7F5; /* Set text color */
+    text-align: center;
+    color: #F4F7F5;
 }
 
 #weather-banner button {
     position: absolute;
-    top: 10px;
-    right: 20px;
+    top: 8px;
+    right: 8px;
     background-color: transparent;
     border: none;
     cursor: pointer;
     font-size: 16px;
     color: #F4F7F5;
-}
-
-#weather-banner button:hover {
-    text-decoration: underline;
 }
 
 /* hero banner */
@@ -163,7 +183,9 @@ a.button, .button {
     margin: 10px;
 }
 /* div container decoration - still working on this to be cohesive 4/7/24 */
+
 .backsplash {
+    display: block;
     margin: 2em auto;
     padding: 1em 1em;
     background-color: white;
@@ -171,7 +193,7 @@ a.button, .button {
 }
 .backsplash h2 {
     font-family: "Caveat", cursive;
-    font-size: 50px;
+    font-size: 42px;
     margin: 10px auto 0;
 }
 
@@ -200,6 +222,9 @@ main {
     min-height: 100vh;
 }
 /* four different types of main classes for each page */
+main.thanks {
+    text-align: center;
+}
 
 main.index {
     width: auto;
@@ -222,6 +247,7 @@ main.contact {
 
 /* Location pics */
 /* went to the root id and all images are affected - made responsive - 4/7/24 */
+
 #locations img {
     margin: 0 auto;
     border-radius: .5em;
@@ -388,14 +414,14 @@ background-color: rgba(0,0,0,0.8);
 }
 
 /* contact page */
-#contact-form {
+.contact-form {
     max-width: 600px;
     margin: 0 auto;
     padding: 1em;
     text-align: center;
 }
 
-#contact-form legend {
+.contact-form legend {
     font-size: 1.5rem;
     margin-bottom: 10px;
     padding: 1em 0;
@@ -404,7 +430,7 @@ background-color: rgba(0,0,0,0.8);
 
 }
 
-#contact-form fieldset {
+.contact-form fieldset {
     margin: 20px auto;
     max-width: 100%;
     width: 475px;
@@ -415,7 +441,7 @@ background-color: rgba(0,0,0,0.8);
     grid-row: 2;
 }
 
-#contact-form label {
+.contact-form label {
     display: block;
     margin-left: 1em;
     margin-bottom: .5em;
@@ -423,7 +449,7 @@ background-color: rgba(0,0,0,0.8);
     text-align: left;
 }
 
-#contact-form input[type="submit"] {
+.contact-form input[type="submit"] {
     background-color: #FF780A;
     border: solid 1px black;
     border-radius: 2em;
@@ -467,4 +493,27 @@ footer ul li {
     display: inline;
     text-align: left;
     text-decoration: none;
+}
+/* media queries for larger screens */
+@media screen and (max-width: 850px) {
+    /* header */
+
+    .logo img {
+        height: 8em;
+        margin: 5px;
+    }
+    h1 {
+        margin-top: 0;
+        text-align: center;
+    }
+    .navigation ul li {
+        margin-top: 0;
+        margin-bottom: 2px;
+    }
+    
+    /* end of header */
+    .button {
+        font-size: 1em;
+        padding: 5px 10px;
+    }
 }

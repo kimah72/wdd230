@@ -49,7 +49,7 @@ function displayWeatherBanner(maxTemperature) {
     weatherBanner.textContent = `Max temperature today in Cozumel: ${maxTemperature}°F`;
 
     const closeButton = document.createElement('button');
-    closeButton.textContent = 'Close';
+    closeButton.textContent = '❎';
     closeButton.id = 'close-btn';
     closeButton.addEventListener('click', closeWeatherBanner);
     weatherBanner.appendChild(closeButton);

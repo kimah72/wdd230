@@ -1,36 +1,5 @@
 /* Media query for small screens */
-@media screen and (max-width: 850px) {
-    /* header */
-    .logo img {
-        height: 8em;
-        margin: 5px;
-    }
-    h1 {
-        margin-top: 0;
-        text-align: center;
-    }
-    .navigation {
-        text-align: center;
-    }
-    .navigation ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .navigation ul li {
-        margin-top: 0;
-        margin-bottom: 5px;
-    }
-    /* end of header */
-    .button {
-        font-size: 1em;
-        padding: 5px 10px;
-    }
-    #locations {
-        display: flex;
-        flex-direction: column;
-    }
-}
+
 @media screen and (max-width: 650px) {
     /* body adjustments */
     .header-lines,
@@ -41,22 +10,45 @@
     .vertical-lines {
         display: none;
     }
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo {
+        margin: auto;
+    }
     .logo img {
         display: block;
-        margin: 10px auto;
+        margin: auto;
     }
 
     header h1 {
+        margin: auto;
         display: block;
         font-size: 65px;
         text-align: left;
     }
 
-    .navigation {
-        display: none;
+    .navigation ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: auto;
+        padding: 0 2em;
     }
 
-    .hamburger-menu {
+    .navigation.open a {
+        display: flex;
+    }
+
+    .navigation a {
+        display: none;
+        margin: 0 .5em .25em .5em;
+    }
+
+    #menu {
         display: block;
         text-align: center;
     }
@@ -70,12 +62,7 @@
         font-size: .75em;
         padding: 5px 10px;
     }
-}
-@keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
-  
+}  
   /* On smaller screens, decrease text size */
   @media only screen and (max-width: 300px) {
     .prev, .next,.text {font-size: 11px}
